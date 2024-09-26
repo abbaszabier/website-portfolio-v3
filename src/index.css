@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "poppins", sans-serif;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes moveShape1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(90vw, 10vw);
+  }
+  50% {
+    transform: translate(10vw, 30vw);
+  }
+  75% {
+    transform: translate(30vw, 10vw);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes moveShape2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(80vw, 7vw);
+  }
+  50% {
+    transform: translate(15vw, 40vw);
+  }
+  75% {
+    transform: translate(20vw, 10vw);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes moveShape3 {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(85vw, 5vw);
+  }
+  50% {
+    transform: translate(20vw, 50vw);
+  }
+  75% {
+    transform: translate(15vw, 5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.animate-moveShape1 {
+  animation: moveShape1 10s ease-in-out infinite;
+}
+
+.animate-moveShape2 {
+  animation: moveShape2 12s ease-in-out infinite;
+}
+
+.animate-moveShape3 {
+  animation: moveShape3 16s ease-in-out infinite;
+}
