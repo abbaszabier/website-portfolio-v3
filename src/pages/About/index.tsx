@@ -1,5 +1,11 @@
+import TechSection from "@/components/TechSection";
+
 function About() {
-  return <div>About</div>;
+  return (
+    <div>
+      <TechSection />
+    </div>
+  );
 }
 
 export default About;

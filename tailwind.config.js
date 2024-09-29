@@ -18,6 +18,13 @@ export default {
         "neomorph-dark": "linear-gradient(145deg, #2c2c2c, #1c1c1c)",
         "neomorph-dark-pressed": "linear-gradient(145deg, #1c1c1c, #2c2c2c)",
       },
+      screens: {
+        xs: { max: "480px" },
+        sm: "481px",
+        md: "768px",
+        lg: "992px",
+        xl: "1200px",
+      },
       colors: {},
     },
   },
