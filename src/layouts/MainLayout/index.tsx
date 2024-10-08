@@ -22,6 +22,7 @@ function MainLayout() {
   const location = useLocation();
   const [darkMode, setDarkMode] = useState(false);
   const [sidebarItems, setSidebarItems] = useState<SidebarItem[]>([]);
+  const [iconSize, setIconSize] = useState(20);
 
   const getSidebarItems = (): SidebarItem[] => {
     return [
@@ -70,6 +71,22 @@ function MainLayout() {
       localStorage.setItem("theme", "light");
     }
   };
+
+  useEffect(() => {
+    const updateIconSize = () => {
+      if (window.innerWidth >= 768) {
+        setIconSize(20);
+      } else {
+        setIconSize(24);
+      }
+    };
+
+    updateIconSize();
+
+    window.addEventListener("resize", updateIconSize);
+
+    return () => window.removeEventListener("resize", updateIconSize);
+  }, []);
 
   return (
     <div className="relative flex flex-col lg:flex-row-reverse lg:flex-row lg:p-6 bg-gray-100 dark:bg-gray-900 min-h-screen">
@@ -126,7 +143,7 @@ function MainLayout() {
                   >
                     <span className="flex flex-col lg:gap-2 items-center">
                       <IconComponent
-                        size="20"
+                        size={iconSize}
                         variant={isActive ? "Bold" : "Outline"}
                       />
                       <span className="lg:block hidden">{item.label}</span>
