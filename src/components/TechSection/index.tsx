@@ -21,12 +21,12 @@ interface Tech {
 
 const techStack: Tech[] = [
   {
-    name: "JavaScript",
+    name: "Javascript",
     icon: <Javascript />,
     description: "Programming Language",
   },
   {
-    name: "TypeScript",
+    name: "Typescript",
     icon: <Typescript />,
     description: "Programming Language",
   },
@@ -58,31 +58,22 @@ const techStack: Tech[] = [
 
 const TechSection: FC = () => {
   return (
-    <section className="py-10">
-      <h2 className="text-center text-3xl font-bold mb-8 text-gray-800">
-        Tech Stack
-      </h2>
-      <div className="px-6">
-        <Marquee gradient={false} speed={50} pauseOnHover={true}>
-          {techStack.map((tech, index) => (
-            <div
-              key={index}
-              className="mx-2 min-w-[300px] min-h-[100px] justify-center items-center border border-gray-100 bg-white rounded-2xl shadow-sm hover:shadow gap-6 transition-shadow duration-300 transform flex h-full"
-            >
-              <div className="flex justify-center h-full">{tech.icon}</div>
-              <div className="text-left flex flex-col justify-center h-full">
-                <h3 className="text-xl font-semibold text-gray-700">
-                  {tech.name}
-                </h3>
-                <p className="text-sm text-gray-500 font-normal dark:text-gray-400">
-                  {tech.description}
-                </p>
-              </div>
-            </div>
-          ))}
-        </Marquee>
-      </div>
-    </section>
+    <Marquee gradient={false} speed={50} pauseOnHover={true}>
+      {techStack.map((tech, index) => (
+        <div
+          key={index}
+          className="mx-2 min-w-[300px] min-h-[100px] justify-center items-center border border-gray-100 bg-white rounded-2xl shadow-sm hover:shadow gap-6 transition-shadow duration-300 transform flex h-full"
+        >
+          <div className="flex justify-center h-full">{tech.icon}</div>
+          <div className="text-left flex flex-col justify-center h-full">
+            <h3 className="text-xl font-semibold text-gray-700">{tech.name}</h3>
+            <p className="text-sm text-gray-500 font-normal dark:text-gray-400">
+              {tech.description}
+            </p>
+          </div>
+        </div>
+      ))}
+    </Marquee>
   );
 };
 
