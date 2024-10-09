@@ -5,7 +5,7 @@ import { Github } from "./Github";
 import { Gitlab } from "./Gitlab";
 import { Html } from "./Html";
 import { Javascript } from "./Javascript";
-import { NextJs } from "./NextJS";
+import { NextJs } from "./NextJs";
 import { React } from "./React";
 import { ReactNative } from "./ReactNative";
 import { ReactQuery } from "./ReactQuery";

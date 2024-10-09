@@ -8,9 +8,9 @@ import {
   Javascript,
   Typescript,
 } from "@/components/icons";
-import Zustand from "@/assets/Zustand.png";
-import Bootstrap from "@/assets/Bootstrap.jpg";
-import Chakra from "@/assets/Chakra.png";
+import Zustand from "@/assets/zustand.webp";
+import Bootstrap from "@/assets/Bootstrap.webp";
+import Chakra from "@/assets/Chakra.webp";
 import Marquee from "react-fast-marquee";
 
 interface Tech {

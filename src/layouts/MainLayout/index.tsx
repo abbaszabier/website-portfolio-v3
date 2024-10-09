@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, Outlet, useLocation } from "react-router-dom";
-import ProfileLogo from "@/assets/icon.png";
+import ProfileLogo from "@/assets/icon.webp";
 import {
   Personalcard,
   DirectboxNotif,

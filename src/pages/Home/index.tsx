@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import Profile from "@/assets/profile.png";
+import Profile from "@/assets/profile.webp";
 
 function Home() {
   const navigate = useNavigate();
