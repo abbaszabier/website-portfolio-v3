@@ -106,11 +106,15 @@ function MainLayout() {
             onClick={() => {
               toggleDarkMode();
             }}
-            className="p-2 bg-gray-100 shadow border border-gray-100 dark:border-gray-900 rounded-full dark:bg-gray-900 text-black dark:text-white rounded"
+            className="p-2 bg-gray-100 shadow border border-gray-100 dark:border-gray-900 rounded-full dark:bg-gray-900 text-black dark:text-white"
+            aria-label={
+              darkMode ? "Switch to light mode" : "Switch to dark mode"
+            }
           >
             {darkMode ? <Sun1 size="18" /> : <Moon size="18" />}
           </button>
         </div>
+
         <Outlet />
       </div>
 
@@ -120,6 +124,7 @@ function MainLayout() {
           <img
             src={ProfileLogo}
             alt="Avatar"
+            loading="lazy"
             className="w-20 mx-auto rounded-full shadow bg-white dark:bg-[#051c29] p-2"
           />
         </div>

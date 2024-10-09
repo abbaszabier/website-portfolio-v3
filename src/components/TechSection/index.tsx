@@ -40,18 +40,18 @@ const techStack: Tech[] = [
   { name: "React Query", icon: <ReactQuery />, description: "Data Fetching" },
   {
     name: "Zustand",
-    icon: <img src={Zustand} alt="Zustand" />,
+    icon: <img loading="lazy" src={Zustand} alt="Zustand" />,
     description: "State Management",
   },
   { name: "Tailwind CSS", icon: <Tailwind />, description: "Framework CSS" },
   {
     name: "Bootstrap",
-    icon: <img src={Bootstrap} alt="Bootstrap" />,
+    icon: <img loading="lazy" src={Bootstrap} alt="Bootstrap" />,
     description: "Framework CSS",
   },
   {
     name: "Chakra UI",
-    icon: <img src={Chakra} alt="Chakra UI" />,
+    icon: <img loading="lazy" src={Chakra} alt="Chakra UI" />,
     description: "Framework CSS",
   },
 ];

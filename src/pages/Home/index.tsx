@@ -10,6 +10,7 @@ function Home() {
         <img
           src={Profile}
           alt="Avatar"
+          loading="lazy"
           className="w-60 xs:w-50 md:w-72 lg:w-80 xl:w-96 mx-auto rounded-full shadow-lg bg-white dark:bg-[#051c29]"
         />
       </div>
