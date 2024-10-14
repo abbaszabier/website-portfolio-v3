@@ -125,6 +125,8 @@ function MainLayout() {
             src={ProfileLogo}
             alt="Avatar"
             loading="lazy"
+            width="80"
+            height="80"
             className="w-20 mx-auto rounded-full shadow bg-white dark:bg-[#051c29] p-2"
           />
         </div>
