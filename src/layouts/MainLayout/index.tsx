@@ -8,9 +8,18 @@ import {
   Send2,
   Moon,
   Sun1,
+  IconProps,
+  Setting2,
 } from "iconsax-react";
-
-import { IconProps } from "iconsax-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuLabel,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 type SidebarItem = {
   path: string;
@@ -21,6 +30,7 @@ type SidebarItem = {
 function MainLayout() {
   const location = useLocation();
   const [darkMode, setDarkMode] = useState(false);
+  const [position, setPosition] = React.useState("bottom");
   const [sidebarItems, setSidebarItems] = useState<SidebarItem[]>([]);
   const [iconSize, setIconSize] = useState(20);
 
@@ -102,17 +112,49 @@ function MainLayout() {
       {/* Main content area */}
       <div className="relative z-10 flex-1 lg:ml-6 lg:rounded-xl overflow-y-auto border border-gray-200 shadow-sm backdrop-blur-sm bg-opacity-75 bg-white dark:bg-opacity-75 dark:bg-gray-800 dark:border-gray-700">
         <div className="sticky top-0 right-0 z-50 justify-end flex px-6 pt-6 w-full">
-          <button
-            onClick={() => {
-              toggleDarkMode();
-            }}
-            className="p-2 bg-gray-100 shadow border border-gray-100 dark:border-gray-900 rounded-full dark:bg-gray-900 text-black dark:text-white"
-            aria-label={
-              darkMode ? "Switch to light mode" : "Switch to dark mode"
-            }
-          >
-            {darkMode ? <Sun1 size="18" /> : <Moon size="18" />}
-          </button>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Setting2
+                size="24"
+                color={`${darkMode ? "#ffffff" : "#051c29"}`}
+                className="cursor-pointer"
+              />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent
+              className={`absolute right-0 ${
+                darkMode ? "bg-[#051c29] text-white" : "bg-white text-[#051c29]"
+              }`}
+            >
+              <DropdownMenuLabel>Dark Mode</DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              <DropdownMenuRadioGroup
+                value={darkMode ? "dark" : "light"}
+                onValueChange={() => {
+                  toggleDarkMode();
+                }}
+              >
+                <DropdownMenuRadioItem value="light">
+                  <Sun1 size="18" className="mr-2" /> Light
+                </DropdownMenuRadioItem>
+                <DropdownMenuRadioItem value="dark">
+                  <Moon size="18" className="mr-2" /> Dark
+                </DropdownMenuRadioItem>
+              </DropdownMenuRadioGroup>
+              <DropdownMenuLabel>Language</DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              <DropdownMenuRadioGroup
+                value={position}
+                onValueChange={setPosition}
+              >
+                <DropdownMenuRadioItem value="top">
+                  <span className="mr-2">🇲🇨</span> ID
+                </DropdownMenuRadioItem>
+                <DropdownMenuRadioItem value="bottom">
+                  <span className="mr-2">🇺🇸</span> EN
+                </DropdownMenuRadioItem>
+              </DropdownMenuRadioGroup>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
 
         <Outlet />
