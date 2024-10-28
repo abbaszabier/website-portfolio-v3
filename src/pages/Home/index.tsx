@@ -17,7 +17,7 @@ function Home() {
         />
       </div>
       <div className="flex w-full md:w-1/2 flex-col justify-start gap-4 order-2 md:order-1">
-        <h1 className="text-[24px] xs:text-center sm:text-[26px] md:text-[28px] lg:text-[30px] xl:text-[36px] 2xl:text-[48px] font-light text-gray-900 dark:text-gray-200 leading-snug">
+        <h1 className="text-[24px] xs:text-center sm:text-[26px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[52px] font-light text-gray-900 dark:text-gray-200 leading-snug">
           Hi!{" "}
           <span className="font-bold text-[#051c29] dark:text-white">
             I'm Abbas
@@ -41,7 +41,7 @@ function Home() {
             onClick={() => navigate("/contact")}
             className="p-2 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 shadow bg-[#051c29] text-[#ffffff] font-semibold dark:bg-white dark:text-[#051c29] rounded-full"
           >
-            Contact
+            Hire Me
           </button>
         </div>
       </div>

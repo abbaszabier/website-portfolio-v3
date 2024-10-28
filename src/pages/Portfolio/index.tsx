@@ -2,9 +2,9 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 function Portfolio() {
   return (
-    <div className="flex flex-col items-center h-[calc(100vh-10rem)]">
-      <Tabs defaultValue="all">
-        <TabsList>
+    <div className="flex flex-col items-center h-[calc(100vh-7rem)]">
+      <Tabs defaultValue="all" className="flex flex-col w-full">
+        <TabsList className="mb-4">
           <TabsTrigger value="all">All</TabsTrigger>
           <TabsTrigger value="react-js">React JS</TabsTrigger>
           <TabsTrigger value="next-js">Next JS</TabsTrigger>
