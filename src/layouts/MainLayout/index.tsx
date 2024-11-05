@@ -6,8 +6,6 @@ import {
   DirectboxNotif,
   Home as HomeIcon,
   Send2,
-  Moon,
-  Sun1,
   IconProps,
   Setting2,
 } from "iconsax-react";
@@ -20,6 +18,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { Switch } from "@/components/ui/switch";
 
 type SidebarItem = {
   path: string;
@@ -30,7 +29,7 @@ type SidebarItem = {
 function MainLayout() {
   const location = useLocation();
   const [darkMode, setDarkMode] = useState(false);
-  const [position, setPosition] = React.useState("bottom");
+  const [position, setPosition] = React.useState("top");
   const [sidebarItems, setSidebarItems] = useState<SidebarItem[]>([]);
   const [iconSize, setIconSize] = useState(20);
 
@@ -125,23 +124,18 @@ function MainLayout() {
                 darkMode ? "bg-[#051c29] text-white" : "bg-white text-[#051c29]"
               }`}
             >
-              <DropdownMenuLabel>Dark Mode</DropdownMenuLabel>
+              <DropdownMenuLabel>
+                <div className="flex justify-between items-center">
+                  <p>Dark Mode</p>
+                  <Switch
+                    id="airplane-mode"
+                    checked={darkMode}
+                    onCheckedChange={toggleDarkMode}
+                  />
+                </div>
+              </DropdownMenuLabel>
               <DropdownMenuSeparator />
-              <DropdownMenuRadioGroup
-                value={darkMode ? "dark" : "light"}
-                onValueChange={() => {
-                  toggleDarkMode();
-                }}
-              >
-                <DropdownMenuRadioItem value="light">
-                  <Sun1 size="18" className="mr-2" /> Light
-                </DropdownMenuRadioItem>
-                <DropdownMenuRadioItem value="dark">
-                  <Moon size="18" className="mr-2" /> Dark
-                </DropdownMenuRadioItem>
-              </DropdownMenuRadioGroup>
-              <DropdownMenuLabel>Language</DropdownMenuLabel>
-              <DropdownMenuSeparator />
+              <DropdownMenuLabel>Select Language</DropdownMenuLabel>
               <DropdownMenuRadioGroup
                 value={position}
                 onValueChange={setPosition}
