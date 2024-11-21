@@ -3,6 +3,12 @@ import Profile from "@/assets/profile.webp";
 
 function Home() {
   const navigate = useNavigate();
+  const phoneNumber = "6288211156895";
+  const message =
+    "Hi, my name is (your name) from (your country). I would like to hire you. Are you currently available?";
+  const waLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    message
+  )}`;
 
   return (
     <div className="flex flex-col md:flex-row sm:justify-between xs:justify-center items-center h-[calc(100vh-10rem)] sm:px-12 xs:px-6 xs:pb-6">
@@ -36,12 +42,21 @@ function Home() {
           design, coffee, and music. I have a passion for creating beautiful and
           responsive websites.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4">
+        <div className="flex flex-row gap-4 xs:gap-2">
           <button
-            onClick={() => navigate("/contact")}
+            onClick={() => {
+              window.open(waLink, "_blank");
+            }}
             className="p-2 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 shadow bg-[#051c29] text-[#ffffff] font-semibold dark:bg-white dark:text-[#051c29] rounded-full"
           >
             Hire Me
+          </button>
+
+          <button
+            onClick={() => navigate("/contact")}
+            className="p-2 w-full sm:w-1/2 md:w-1/3 rounded-full lg:w-1/4 shadow border border-[#051c29] text-[#051c29] font-semibold dark:border-white dark:text-[#ffffff]"
+          >
+            Contact
           </button>
         </div>
       </div>
