@@ -114,14 +114,16 @@ function MainLayout() {
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Setting2
-                size="24"
+                size="28"
                 color={`${darkMode ? "#ffffff" : "#051c29"}`}
-                className="cursor-pointer"
+                className="cursor-pointer hover:text-[#051c29] dark:hover:text-gray-300 hover:bg-[#f0f0f0] dark:hover:bg-gray-700 rounded-full p-1"
               />
             </DropdownMenuTrigger>
             <DropdownMenuContent
-              className={`absolute right-0 ${
-                darkMode ? "bg-[#051c29] text-white" : "bg-white text-[#051c29]"
+              className={`mr-12 xs:mr-6 ${
+                darkMode
+                  ? "bg-[#051c29] bg-opacity-75 backdrop-blur-sm text-white"
+                  : "bg-white bg-opacity-75 backdrop-blur-sm text-[#051c29]"
               }`}
             >
               <DropdownMenuLabel>
@@ -145,6 +147,9 @@ function MainLayout() {
                 </DropdownMenuRadioItem>
                 <DropdownMenuRadioItem value="bottom">
                   <span className="mr-2">🇺🇸</span> EN
+                </DropdownMenuRadioItem>
+                <DropdownMenuRadioItem value="kr">
+                  <span className="mr-2">🇰🇷</span> KR
                 </DropdownMenuRadioItem>
               </DropdownMenuRadioGroup>
             </DropdownMenuContent>
