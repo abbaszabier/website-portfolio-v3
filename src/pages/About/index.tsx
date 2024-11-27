@@ -1,10 +1,14 @@
 import TechSection from "@/components/TechSection";
+import { Helmet } from "react-helmet-async";
 
 function About() {
   return (
-    <div>
+    <>
+      <Helmet>
+        <title>Portfolio Abbas - About</title>
+      </Helmet>
       <TechSection />
-    </div>
+    </>
   );
 }
 
