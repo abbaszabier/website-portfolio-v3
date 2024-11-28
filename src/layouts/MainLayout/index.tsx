@@ -32,6 +32,7 @@ function MainLayout() {
   const [position, setPosition] = React.useState("top");
   const [sidebarItems, setSidebarItems] = useState<SidebarItem[]>([]);
   const [iconSize, setIconSize] = useState(20);
+  const [isHovered, setIsHovered] = useState(false);
 
   const getSidebarItems = (): SidebarItem[] => {
     return [
@@ -86,7 +87,7 @@ function MainLayout() {
       if (window.innerWidth >= 768) {
         setIconSize(20);
       } else {
-        setIconSize(24);
+        setIconSize(22);
       }
     };
 
@@ -113,11 +114,45 @@ function MainLayout() {
         <div className="sticky top-0 right-0 z-50 justify-end flex px-6 pt-6 w-full">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Setting2
-                size="28"
-                color={`${darkMode ? "#ffffff" : "#051c29"}`}
-                className="cursor-pointer hover:text-[#051c29] dark:hover:text-gray-300 hover:bg-[#f0f0f0] dark:hover:bg-gray-700 rounded-full p-1"
-              />
+              <div
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+                className="relative cursor-pointer group overflow-hidden rounded-full border
+    border-[#051c29] border-opacity-10 dark:border-gray-600 
+    text-[#051c29] dark:text-gray-200 text-lg font-semibold 
+    transition duration-300 ease-in p-2"
+              >
+                {/* Background animasi */}
+                <span
+                  className="absolute inset-0 bg-[#051c29] dark:bg-gray-200 
+      transition-transform duration-300 transform 
+      translate-x-full translate-y-full 
+      group-hover:translate-x-0 group-hover:translate-y-0 
+      rounded-full"
+                ></span>
+
+                {/* Icon */}
+                <span
+                  onMouseEnter={() => setIsHovered(true)}
+                  onMouseLeave={() => setIsHovered(false)}
+                  className={`relative z-10 group-hover:text-white dark:group-hover:text-black 
+      transition duration-200`}
+                >
+                  <Setting2
+                    size="20"
+                    color={
+                      isHovered
+                        ? darkMode
+                          ? "#051c29"
+                          : "#ffffff"
+                        : darkMode
+                        ? "#ffffff"
+                        : "#051c29"
+                    }
+                    className="cursor-pointer transition duration-300 ease-in"
+                  />
+                </span>
+              </div>
             </DropdownMenuTrigger>
             <DropdownMenuContent
               className={`mr-12 xs:mr-6 ${
@@ -156,7 +191,9 @@ function MainLayout() {
           </DropdownMenu>
         </div>
 
-        <Outlet />
+        <div className="flex flex-col items-center h-[calc(100vh-7rem)]">
+          <Outlet />
+        </div>
       </div>
 
       {/* Sidebar */}
@@ -180,7 +217,7 @@ function MainLayout() {
                 <li key={index}>
                   <Link
                     to={item.path}
-                    className={`flex items-center justify-center py-2 px-4 lg:mb-4 lg:mb-0 hover:text-[#051c29] dark:hover:text-gray-300 rounded ${
+                    className={`flex items-center justify-center lg:py-2 px-4 lg:mb-4 lg:mb-0 hover:text-[#051c29] dark:hover:text-gray-300 rounded ${
                       isActive
                         ? "text-[#051c29] dark:text-gray-100 font-bold"
                         : "text-gray-500 dark:text-gray-400"
