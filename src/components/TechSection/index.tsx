@@ -1,7 +1,6 @@
 import { FC } from "react";
 import {
   React,
-  ReactNative,
   ReactQuery,
   Tailwind,
   NextJs,
@@ -32,11 +31,6 @@ const techStack: Tech[] = [
   },
   { name: "React JS", icon: <React />, description: "Frontend Development" },
   { name: "Next JS", icon: <NextJs />, description: "Fullstack Development" },
-  {
-    name: "React Native",
-    icon: <ReactNative />,
-    description: "Mobile Development",
-  },
   { name: "React Query", icon: <ReactQuery />, description: "Data Fetching" },
   {
     name: "Zustand",
