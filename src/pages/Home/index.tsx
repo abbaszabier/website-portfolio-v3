@@ -6,7 +6,7 @@ import { Download, Mail } from "lucide-react";
 function Home() {
   const phoneNumber = "6288211156895";
   const message =
-    "Hi, my name is (your name) from (your country). I would like to hire you. Are you currently available?";
+    "Hi, my name is (type your name) from (type your country). I would like to hire you. Are you currently available?";
   const waLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message
   )}`;
