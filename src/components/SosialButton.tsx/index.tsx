@@ -9,8 +9,8 @@ interface SocialButtonProps {
 const SocialButton: FC<SocialButtonProps> = ({ icon, label, href }) => {
   return (
     <div className="group relative flex justify-center items-center">
-      {/* Tooltip */}
-      <span className="absolute bottom-full mb-2 text-sm bg-[#051c29] text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition duration-300">
+      {/* Tooltip Desktop/Tablet */}
+      <span className="xs:hidden absolute bottom-full mb-2 text-sm bg-[#051c29] text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition duration-300">
         {label}
       </span>
 
@@ -31,6 +31,11 @@ const SocialButton: FC<SocialButtonProps> = ({ icon, label, href }) => {
           {icon}
         </span>
       </a>
+
+      {/* Tooltip Mobile */}
+      <span className="hidden xs:block absolute top-full mt-1 text-sm bg-[#051c29] text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition duration-300">
+        {label}
+      </span>
     </div>
   );
 };
