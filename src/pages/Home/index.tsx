@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Profile from "@/assets/profile.webp";
 import SocialButton from "@/components/SosialButton.tsx";
-import { Download, Mail } from "lucide-react";
+import { DocumentDownload, Message } from "iconsax-react";
 
 function Home() {
   const phoneNumber = "6288211156895";
@@ -52,30 +52,26 @@ function Home() {
               onClick={() => {
                 window.open(waLink, "_blank");
               }}
-              className="relative mr-1 rounded-full inline-block font-semibold group p-2 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 shadow"
+              className="
+    relative bg-[#051c29] text-white hover:bg-white hover:text-[#051c29] 
+    dark:bg-white dark:text-[#051c29] dark:hover:bg-[#051c29] dark:hover:text-white
+    rounded-full inline-block font-semibold p-2 w-full 
+    sm:w-1/2 md:w-1/3 lg:w-1/4 shadow transition duration-300
+  "
             >
-              {/* Lapisan efek hover */}
-              <span className="absolute inset-0 w-full h-full transition duration-400 ease-out transform translate-x-1 translate-y-1 bg-[#051c29] dark:bg-white group-hover:-translate-x-0 group-hover:-translate-y-0 rounded-full"></span>
-
-              {/* Lapisan utama dengan border */}
-              <span className="absolute inset-0 w-full h-full bg-white dark:bg-[#051c29] border border-[#051c29] dark:border-white group-hover:bg-gray-100 dark:group-hover:bg-gray-800 rounded-full"></span>
-
-              {/* Konten tombol */}
-              <span className="relative text-[#051c29] dark:text-white">
-                Hire Me
-              </span>
+              Hire Me
             </button>
 
             <span className="text-[#051c29] xs:hidden dark:text-white">-</span>
 
             <div className="flex w-full space-x-2 xs:mt-2 xs:justify-center">
               <SocialButton
-                icon={<Download size={14} />}
+                icon={<DocumentDownload size={14} />}
                 label="Resume"
                 href="/resume.pdf"
               />
               <SocialButton
-                icon={<Mail size={14} />}
+                icon={<Message size={14} />}
                 label="Email"
                 href="mailto:abbas.zabier06@gmail.com"
               />
