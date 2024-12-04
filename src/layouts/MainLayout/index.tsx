@@ -117,13 +117,14 @@ function MainLayout() {
               <div
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
-                className="relative cursor-pointer group overflow-hidden rounded-full border
-    border-[#051c29] border-opacity-10 dark:border-gray-600 
+                className="relative cursor-pointer group overflow-hidden rounded-full bg-white shadow dark:bg-[#051c29]
     text-[#051c29] dark:text-gray-200 text-lg font-semibold 
     transition duration-300 ease-in p-2"
               >
                 {/* Background animasi */}
                 <span
+                  onMouseEnter={() => setIsHovered(true)}
+                  onMouseLeave={() => setIsHovered(false)}
                   className="absolute inset-0 bg-[#051c29] dark:bg-gray-200 
       transition-transform duration-300 transform 
       translate-x-full translate-y-full 
