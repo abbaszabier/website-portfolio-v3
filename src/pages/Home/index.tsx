@@ -42,9 +42,9 @@ function Home() {
               INDONESIA 🇮🇩
             </span>
           </h1>
-          <p className="text-gray-500 xs:text-center font-normal dark:text-gray-400 mb-2 xs:text-[14px] text-base">
-            Welcome to my personal website 👋🏼. I'm a guy who loves to code,
-            design, coffee, and music. I have a passion for creating beautiful
+          <p className="text-gray-500 xs:text-center font-normal dark:text-gray-400 mb-2 xs:text-[12px] text-base">
+            Welcome to my personal website 👋🏼. I am a guy who loves cats,
+            coding, design, and coffee. I have a passion for creating beautiful
             and responsive websites.
           </p>
           <div className="flex flex-row gap-4 xs:gap-2 xs:flex-col xs:justify-center sm:justify-left items-center">
@@ -66,12 +66,12 @@ function Home() {
 
             <div className="flex w-full space-x-2 xs:mt-2 xs:justify-center">
               <SocialButton
-                icon={<DocumentDownload size={14} />}
+                icon={<DocumentDownload size={16} />}
                 label="Resume"
                 href="/resume.pdf"
               />
               <SocialButton
-                icon={<Message size={14} />}
+                icon={<Message size={16} />}
                 label="Email"
                 href="mailto:abbas.zabier06@gmail.com"
               />
