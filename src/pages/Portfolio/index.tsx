@@ -13,12 +13,10 @@ function Portfolio() {
             <TabsTrigger value="all">All</TabsTrigger>
             <TabsTrigger value="react-js">React JS</TabsTrigger>
             <TabsTrigger value="next-js">Next JS</TabsTrigger>
-            <TabsTrigger value="react-native">React Navive</TabsTrigger>
           </TabsList>
           <TabsContent value="all">All Section</TabsContent>
           <TabsContent value="react-js">React JS Section</TabsContent>
           <TabsContent value="next-js">Next JS Section</TabsContent>
-          <TabsContent value="react-native">React Native Section</TabsContent>
         </Tabs>
       </div>
     </>
