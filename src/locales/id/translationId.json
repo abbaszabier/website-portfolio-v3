@@ -1,0 +1,20 @@
+{
+  "nav": {
+    "Home": "Beranda",
+    "About": "Tentang",
+    "Portfolio": "Portofolio",
+    "Contact": "Kontak"
+  },
+  "homePage": {
+    "HeadingLine1": "Hai!",
+    "HeadingLine2": "Saya Abbas,",
+    "HeadingLine3": "",
+    "HeadingLine4": "FRONTEND DEVELOPER",
+    "HeadingLine5": "Berdomisili",
+    "HeadingLine6": "INDONESIA 🇮🇩",
+    "Desc": "Selamat datang di situs saya 👋🏼. Seseorang yang menyukai kucing, koding, desain, dan kopi. Memiliki passion membuat website yang indah dan responsif.",
+    "ButtonHireMe": "Rekrut",
+    "Resume": "Resume",
+    "Email": "Email"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "Home": "Home",
+    "About": "About",
+    "Portfolio": "Portfolio",
+    "Contact": "Contact"
+  },
+
+  "homePage": {
+    "HeadingLine1": "Hi!",
+    "HeadingLine2": "I'm Abbas,",
+    "HeadingLine3": "A",
+    "HeadingLine4": "FRONTEND DEVELOPER",
+    "HeadingLine5": "Based In",
+    "HeadingLine6": "INDONESIA 🇮🇩",
+    "Desc": "Welcome to my personal website 👋🏼. I am a guy who loves cats, coding, design, and coffee. I have a passion for creating beautiful and responsive websites.",
+    "ButtonHireMe": "Hire Me",
+    "Resume": "Resume",
+    "Email": "Email"
+  }
+}

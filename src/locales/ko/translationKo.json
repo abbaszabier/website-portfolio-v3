@@ -1,0 +1,20 @@
+{
+  "nav": {
+    "Home": "홈",
+    "About": "정보",
+    "Portfolio": "일하다",
+    "Contact": "연락처"
+  },
+  "homePage": {
+    "HeadingLine1": "안녕!",
+    "HeadingLine2": "저는 Abbas,",
+    "HeadingLine3": "",
+    "HeadingLine4": "FRONTEND DEVELOPER",
+    "HeadingLine5": "거주지",
+    "HeadingLine6": "인도네시아 🇮🇩",
+    "Desc": "제 개인 웹사이트에 오신 것을 환영합니다 👋🏼. 저는 고양이, 코딩, 디자인, 그리고 커피를 좋아하는 사람입니다. 아름답고 반응형 웹사이트를 만드는 데 열정을 가지고 있습니다.",
+    "ButtonHireMe": "고용하기",
+    "Resume": "이력서",
+    "Email": "이메일"
+  }
+}
