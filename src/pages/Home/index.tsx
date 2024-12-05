@@ -2,8 +2,10 @@ import { Helmet } from "react-helmet-async";
 import Profile from "@/assets/profile.webp";
 import SocialButton from "@/components/SosialButton.tsx";
 import { DocumentDownload, Message } from "iconsax-react";
+import { useTranslation } from "react-i18next";
 
 function Home() {
+  const { t } = useTranslation();
   const phoneNumber = "6288211156895";
   const message =
     "Hi, my name is (type your name) from (type your country). I would like to hire you. Are you currently available?";
@@ -29,37 +31,36 @@ function Home() {
         </div>
         <div className="flex w-full md:w-1/2 flex-col gap-4 order-2 md:order-1">
           <h1 className="text-[24px] xs:text-center sm:text-[26px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[52px] font-light text-gray-900 dark:text-gray-200 leading-snug">
-            Hi!{" "}
+            {t("homePage.HeadingLine1")}{" "}
             <span className="font-bold text-[#051c29] dark:text-white">
-              I'm Abbas
+              {t("homePage.HeadingLine2")}{" "}
             </span>
-            , A <br />
+            {t("homePage.HeadingLine3")}
+            <br />
             <span className="font-bold text-[#051c29] dark:text-white">
-              FRONTEND DEVELOPER
+              {t("homePage.HeadingLine4")}
             </span>{" "}
-            <br /> Based In{" "}
+            <br /> {t("homePage.HeadingLine5")}{" "}
             <span className="font-bold text-[#051c29] dark:text-white">
-              INDONESIA 🇮🇩
+              {t("homePage.HeadingLine6")}
             </span>
           </h1>
-          <p className="text-gray-500 xs:text-center font-normal dark:text-gray-400 mb-2 xs:text-[12px] text-base">
-            Welcome to my personal website 👋🏼. I am a guy who loves cats,
-            coding, design, and coffee. I have a passion for creating beautiful
-            and responsive websites.
+          <p className="text-gray-500 xs:leading-5 xs:text-center font-normal dark:text-gray-400 mb-2 xs:text-[12px] text-base">
+            {t("homePage.Desc")}
           </p>
           <div className="flex flex-row gap-4 xs:gap-2 xs:flex-col xs:justify-center sm:justify-left items-center">
             <button
               onClick={() => {
                 window.open(waLink, "_blank");
               }}
-              className="
+              className={`
     relative bg-[#051c29] text-white hover:bg-white hover:text-[#051c29] 
     dark:bg-white dark:text-[#051c29] dark:hover:bg-[#051c29] dark:hover:text-white
-    rounded-full inline-block font-semibold p-2 w-full 
+    rounded-full inline-block font-semibold p-3 w-full 
     sm:w-1/2 md:w-1/3 lg:w-1/4 shadow transition duration-300
-  "
+  `}
             >
-              Hire Me
+              {t("homePage.ButtonHireMe")}
             </button>
 
             <span className="text-[#051c29] xs:hidden dark:text-white">-</span>
@@ -67,12 +68,12 @@ function Home() {
             <div className="flex w-full space-x-2 xs:mt-2 xs:justify-center">
               <SocialButton
                 icon={<DocumentDownload size={16} />}
-                label="Resume"
+                label={t("homePage.Resume")}
                 href="/resume.pdf"
               />
               <SocialButton
                 icon={<Message size={16} />}
-                label="Email"
+                label={t("homePage.Email")}
                 href="mailto:abbas.zabier06@gmail.com"
               />
             </div>

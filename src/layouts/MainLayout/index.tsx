@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import ProfileLogo from "@/assets/icon.webp";
 import {
@@ -19,6 +19,9 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Switch } from "@/components/ui/switch";
+import i18n from "@/locales/i18n";
+import { useTranslation } from "react-i18next";
+import { useSettingStore } from "@/store/settings";
 
 type SidebarItem = {
   path: string;
@@ -29,39 +32,48 @@ type SidebarItem = {
 function MainLayout() {
   const location = useLocation();
   const [darkMode, setDarkMode] = useState(false);
-  const [position, setPosition] = React.useState("top");
   const [sidebarItems, setSidebarItems] = useState<SidebarItem[]>([]);
   const [iconSize, setIconSize] = useState(20);
   const [isHovered, setIsHovered] = useState(false);
+  const { t } = useTranslation();
+  const { setSelectedLanguage, selectedLanguage } = useSettingStore(
+    (state) => state
+  );
 
-  const getSidebarItems = (): SidebarItem[] => {
+  const changeLanguage = (language: string | undefined) => {
+    const selectedLang = language;
+    i18n.changeLanguage(selectedLang);
+    setSelectedLanguage(selectedLang);
+  };
+
+  const getSidebarItems = useCallback((): SidebarItem[] => {
     return [
       {
         path: "/",
         icon: HomeIcon,
-        label: "Home",
+        label: t("nav.Home"),
       },
       {
         path: "/about",
         icon: Personalcard,
-        label: "About",
+        label: t("nav.About"),
       },
       {
         path: "/portfolio",
         icon: DirectboxNotif,
-        label: "Portfolio",
+        label: t("nav.Portfolio"),
       },
       {
         path: "/contact",
         icon: Send2,
-        label: "Contact",
+        label: t("nav.Contact"),
       },
     ];
-  };
+  }, [t]);
 
   useEffect(() => {
     setSidebarItems(getSidebarItems());
-  }, []);
+  }, [getSidebarItems]);
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
@@ -175,16 +187,16 @@ function MainLayout() {
               <DropdownMenuSeparator />
               <DropdownMenuLabel>Select Language</DropdownMenuLabel>
               <DropdownMenuRadioGroup
-                value={position}
-                onValueChange={setPosition}
+                value={selectedLanguage}
+                onValueChange={changeLanguage}
               >
-                <DropdownMenuRadioItem value="top">
+                <DropdownMenuRadioItem value="id">
                   <span className="mr-2">🇲🇨</span> ID
                 </DropdownMenuRadioItem>
-                <DropdownMenuRadioItem value="bottom">
+                <DropdownMenuRadioItem value="en">
                   <span className="mr-2">🇺🇸</span> EN
                 </DropdownMenuRadioItem>
-                <DropdownMenuRadioItem value="kr">
+                <DropdownMenuRadioItem value="ko">
                   <span className="mr-2">🇰🇷</span> KR
                 </DropdownMenuRadioItem>
               </DropdownMenuRadioGroup>
@@ -215,10 +227,10 @@ function MainLayout() {
               const isActive = location.pathname === item.path;
               const IconComponent = item.icon;
               return (
-                <li key={index}>
+                <li key={index} className="xs:px-4">
                   <Link
                     to={item.path}
-                    className={`flex items-center justify-center lg:py-2 px-4 lg:mb-4 lg:mb-0 hover:text-[#051c29] dark:hover:text-gray-300 rounded ${
+                    className={`flex items-center justify-center lg:py-2 lg:mb-4 lg:mb-0 hover:text-[#051c29] dark:hover:text-gray-300 rounded ${
                       isActive
                         ? "text-[#051c29] dark:text-gray-100 font-bold"
                         : "text-gray-500 dark:text-gray-400"
