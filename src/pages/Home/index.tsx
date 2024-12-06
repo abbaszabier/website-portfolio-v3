@@ -56,7 +56,7 @@ function Home() {
               className={`
     relative bg-[#051c29] text-white hover:bg-white hover:text-[#051c29] 
     dark:bg-white dark:text-[#051c29] dark:hover:bg-[#051c29] dark:hover:text-white
-    rounded-full inline-block font-semibold p-3 w-full 
+    rounded-full inline-block font-semibold p-3 xs:p-2 w-full 
     sm:w-1/2 md:w-1/3 lg:w-1/4 shadow transition duration-300
   `}
             >
