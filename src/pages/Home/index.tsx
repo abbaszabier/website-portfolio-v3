@@ -26,7 +26,7 @@ function Home() {
             loading="lazy"
             width="384"
             height="384"
-            className="w-60 xs:w-48 md:w-72 lg:w-80 xl:w-96 mx-auto transition duration-300 ease-in-out hover:scale-110"
+            className="w-60 xs:w-48 md:w-72 lg:w-80 xl:w-96 mx-auto hover:scale-110"
           />
         </div>
         <div className="flex w-full md:w-1/2 flex-col gap-4 order-2 md:order-1">
@@ -57,7 +57,7 @@ function Home() {
     relative bg-[#051c29] text-white hover:bg-white hover:text-[#051c29] 
     dark:bg-white dark:text-[#051c29] dark:hover:bg-[#051c29] dark:hover:text-white
     rounded-full inline-block font-semibold p-3 xs:p-2 w-full 
-    sm:w-1/2 md:w-1/3 lg:w-1/4 shadow transition duration-300
+    sm:w-1/2 md:w-1/3 lg:w-1/4 shadow
   `}
             >
               {t("homePage.ButtonHireMe")}

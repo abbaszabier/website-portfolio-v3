@@ -131,7 +131,7 @@ function MainLayout() {
                 onMouseLeave={() => setIsHovered(false)}
                 className="relative cursor-pointer group overflow-hidden rounded-full bg-white shadow dark:bg-[#051c29]
     text-[#051c29] dark:text-gray-200 text-lg font-semibold 
-    transition duration-300 ease-in p-2"
+     p-2"
               >
                 {/* Background animasi */}
                 <span
@@ -149,7 +149,7 @@ function MainLayout() {
                   onMouseEnter={() => setIsHovered(true)}
                   onMouseLeave={() => setIsHovered(false)}
                   className={`relative z-10 group-hover:text-white dark:group-hover:text-black 
-      transition duration-200`}
+      `}
                 >
                   <Setting2
                     size="20"
@@ -162,7 +162,7 @@ function MainLayout() {
                         ? "#ffffff"
                         : "#051c29"
                     }
-                    className="cursor-pointer transition duration-300 ease-in"
+                    className="cursor-pointer "
                   />
                 </span>
               </div>
