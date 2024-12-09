@@ -30,7 +30,7 @@ const techStack: Tech[] = [
     description: "Programming Language",
   },
   { name: "React JS", icon: <React />, description: "Frontend Development" },
-  { name: "Next JS", icon: <NextJs />, description: "Fullstack Development" },
+  { name: "Next JS", icon: <NextJs />, description: "React Framework" },
   { name: "React Query", icon: <ReactQuery />, description: "Data Fetching" },
   {
     name: "Zustand",
@@ -56,7 +56,7 @@ const TechSection: FC = () => {
       {techStack.map((tech, index) => (
         <div
           key={index}
-          className="mx-2 min-w-[300px] min-h-[100px] justify-center items-center border border-gray-100 bg-white rounded-2xl shadow-sm hover:shadow gap-6 transition-shadow duration-300 transform flex h-full"
+          className="mx-2 min-w-[275px] min-h-[100px] justify-center items-center border border-gray-100 bg-white rounded-2xl shadow-sm hover:shadow gap-6 transition-shadow duration-300 transform flex h-full"
         >
           <div className="flex justify-center h-full">{tech.icon}</div>
           <div className="text-left flex flex-col justify-center h-full">

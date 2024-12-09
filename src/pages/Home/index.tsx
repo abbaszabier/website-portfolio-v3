@@ -26,7 +26,7 @@ function Home() {
             loading="lazy"
             width="384"
             height="384"
-            className="w-60 xs:w-48 md:w-72 lg:w-80 xl:w-96 mx-auto hover:scale-110"
+            className="w-60 xs:w-48 md:w-72 lg:w-80 xl:w-96 mx-auto hover:scale-110 transition-transform duration-300"
           />
         </div>
         <div className="flex w-full md:w-1/2 flex-col gap-4 order-2 md:order-1">
