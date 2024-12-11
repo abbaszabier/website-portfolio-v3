@@ -12,7 +12,6 @@ import { ReactQuery } from "./ReactQuery";
 import { Tailwind } from "./Tailwind";
 import { Typescript } from "./Typescript";
 import { ViteJs } from "./ViteJs";
-import { Zustand } from "./Zustand";
 
 export {
   Bootstrap,
@@ -29,5 +28,4 @@ export {
   Tailwind,
   Typescript,
   ViteJs,
-  Zustand,
 };
