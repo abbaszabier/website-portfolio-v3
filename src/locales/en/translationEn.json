@@ -17,5 +17,10 @@
     "ButtonHireMe": "Hire Me",
     "Resume": "Resume",
     "Email": "Email"
+  },
+
+  "settings": {
+    "DarkMode": "Dark Mode",
+    "SelectLanguage": "Select Language"
   }
 }

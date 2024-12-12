@@ -16,5 +16,9 @@
     "ButtonHireMe": "Rekrut",
     "Resume": "Resume",
     "Email": "Email"
+  },
+  "settings": {
+    "DarkMode": "Mode Gelap",
+    "SelectLanguage": "Pilih Bahasa"
   }
 }

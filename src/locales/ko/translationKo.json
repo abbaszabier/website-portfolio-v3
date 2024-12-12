@@ -16,5 +16,9 @@
     "ButtonHireMe": "고용하기",
     "Resume": "이력서",
     "Email": "이메일"
+  },
+  "settings": {
+    "DarkMode": "다크 모드",
+    "SelectLanguage": "언어 선택"
   }
 }
