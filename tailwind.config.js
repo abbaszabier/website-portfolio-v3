@@ -25,6 +25,25 @@ export default {
         lg: "992px",
         xl: "1200px",
       },
+      animation: {
+        moveShape1: "moveShape1 3s ease-in-out infinite",
+        moveShape2: "moveShape2 4s ease-in-out infinite",
+        moveShape3: "moveShape3 5s ease-in-out infinite",
+      },
+      keyframes: {
+        moveShape1: {
+          "0%, 100%": { transform: "translate(0, 0)" },
+          "50%": { transform: "translate(30px, -30px)" },
+        },
+        moveShape2: {
+          "0%, 100%": { transform: "translate(0, 0)" },
+          "50%": { transform: "translate(-30px, 30px)" },
+        },
+        moveShape3: {
+          "0%, 100%": { transform: "translate(0, 0)" },
+          "50%": { transform: "translate(20px, 20px)" },
+        },
+      },
       colors: {},
     },
   },
