@@ -129,16 +129,18 @@ function MainLayout() {
               <div
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
+                role="button"
+                aria-label="Custom button"
                 className="relative cursor-pointer group overflow-hidden rounded-full bg-white shadow dark:bg-[#051c29]
     text-[#051c29] dark:text-gray-200 text-lg font-semibold 
-     p-2"
+     p-2 "
               >
                 {/* Background animasi */}
                 <span
                   onMouseEnter={() => setIsHovered(true)}
                   onMouseLeave={() => setIsHovered(false)}
                   className="absolute inset-0 bg-[#051c29] dark:bg-gray-200 
-      transition-transform duration-300 transform 
+       transform 
       translate-x-full translate-y-full 
       group-hover:translate-x-0 group-hover:translate-y-0 
       rounded-full"

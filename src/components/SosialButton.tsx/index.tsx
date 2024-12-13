@@ -3,7 +3,7 @@ import { FC } from "react";
 interface SocialButtonProps {
   icon: JSX.Element;
   label: string;
-  href: string;
+  href: string | undefined;
 }
 
 const SocialButton: FC<SocialButtonProps> = ({ icon, label, href }) => {
@@ -17,6 +17,7 @@ const SocialButton: FC<SocialButtonProps> = ({ icon, label, href }) => {
       {/* Tombol */}
       <a
         href={href}
+        aria-label={label}
         target="_blank"
         rel="noopener noreferrer"
         className="relative group overflow-hidden rounded-full shadow dark:border-white text-[#051c29] dark:text-white 
