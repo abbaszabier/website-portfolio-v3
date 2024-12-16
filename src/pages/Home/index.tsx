@@ -1,8 +1,8 @@
 import { Helmet } from "react-helmet-async";
 import Profile from "@/assets/profile.webp";
 import SocialButton from "@/components/SosialButton.tsx";
-import { DocumentDownload, Message } from "iconsax-react";
 import { useTranslation } from "react-i18next";
+import { Github, Instagram, Linkedin, Twitter } from "@/components/icons";
 
 function Home() {
   const { t } = useTranslation();
@@ -23,10 +23,15 @@ function Home() {
           <img
             src={Profile}
             alt="Avatar"
-            loading="lazy"
+            loading="eager"
+            decoding="async"
             width="384"
             height="384"
             className="w-60 xs:w-48 md:w-72 lg:w-80 xl:w-96 mx-auto hover:scale-110 transition-transform duration-300"
+            style={{
+              background: "transparent",
+              animation: "placeholder 1.2s ease-in-out infinite",
+            }}
           />
         </div>
         <div className="flex w-full md:w-1/2 flex-col gap-4 order-2 md:order-1">
@@ -67,14 +72,24 @@ function Home() {
 
             <div className="flex w-full space-x-2 xs:mt-2 xs:justify-center">
               <SocialButton
-                icon={<DocumentDownload size={16} />}
-                label={t("homePage.Resume")}
-                href="/resume.pdf"
+                icon={<Github />}
+                label={t("homePage.Github")}
+                href="https://github.com/abbaszabier"
               />
               <SocialButton
-                icon={<Message size={16} />}
-                label={t("homePage.Email")}
-                href="mailto:abbas.zabier06@gmail.com"
+                icon={<Instagram />}
+                label={t("homePage.Instagram")}
+                href="https://www.instagram.com/abzabier_/"
+              />
+              <SocialButton
+                icon={<Linkedin />}
+                label={t("homePage.Linkedin")}
+                href="https://www.linkedin.com/in/abbaszabier/"
+              />
+              <SocialButton
+                icon={<Twitter />}
+                label={t("homePage.Twitter")}
+                href="https://x.com/abzabier_"
               />
             </div>
           </div>
