@@ -1,4 +1,3 @@
-import { FC } from "react";
 import {
   React,
   ReactQuery,
@@ -11,6 +10,7 @@ import Zustand from "@/assets/Zustand.svg";
 import Bootstrap from "@/assets/Bootstrap.svg";
 import Chakra from "@/assets/ChakraUI.svg";
 import Marquee from "react-fast-marquee";
+import { TFunction } from "i18next";
 
 interface Tech {
   name: string;
@@ -18,39 +18,60 @@ interface Tech {
   description: string;
 }
 
-const techStack: Tech[] = [
-  {
-    name: "Javascript",
-    icon: <Javascript />,
-    description: "Programming Language",
-  },
-  {
-    name: "Typescript",
-    icon: <Typescript />,
-    description: "Programming Language",
-  },
-  { name: "React JS", icon: <React />, description: "Frontend Development" },
-  { name: "Next JS", icon: <NextJs />, description: "React Framework" },
-  { name: "React Query", icon: <ReactQuery />, description: "Data Fetching" },
-  {
-    name: "Zustand",
-    icon: <img loading="lazy" src={Zustand} alt="Zustand" />,
-    description: "State Management",
-  },
-  { name: "Tailwind CSS", icon: <Tailwind />, description: "Framework CSS" },
-  {
-    name: "Bootstrap",
-    icon: <img loading="lazy" src={Bootstrap} alt="Bootstrap" />,
-    description: "Framework CSS",
-  },
-  {
-    name: "Chakra UI",
-    icon: <img loading="lazy" src={Chakra} alt="Chakra UI" />,
-    description: "Framework CSS",
-  },
-];
+interface TechSectionProps {
+  t: TFunction;
+}
 
-const TechSection: FC = () => {
+const TechSection: React.FC<TechSectionProps> = ({ t }) => {
+  const techStack: Tech[] = [
+    {
+      name: t("aboutPage.JavaScript"),
+      icon: <Javascript />,
+      description: t("aboutPage.DescJavaScript"),
+    },
+    {
+      name: t("aboutPage.TypeScript"),
+      icon: <Typescript />,
+      description: t("aboutPage.DescTypeScript"),
+    },
+    {
+      name: t("aboutPage.ReactJS"),
+      icon: <React />,
+      description: t("aboutPage.DescReactJS"),
+    },
+    {
+      name: t("aboutPage.NextJS"),
+      icon: <NextJs />,
+      description: t("aboutPage.DescNextJS"),
+    },
+    {
+      name: t("aboutPage.ReactQuery"),
+      icon: <ReactQuery />,
+      description: t("aboutPage.DescReactQuery"),
+    },
+    {
+      name: t("aboutPage.Zustand"),
+      icon: <img loading="lazy" src={Zustand} alt={t("aboutPage.Zustand")} />,
+      description: t("aboutPage.DescZustand"),
+    },
+    {
+      name: t("aboutPage.TailwindCSS"),
+      icon: <Tailwind />,
+      description: t("aboutPage.DescTailwindCSS"),
+    },
+    {
+      name: t("aboutPage.Bootstrap"),
+      icon: (
+        <img loading="lazy" src={Bootstrap} alt={t("aboutPage.Bootstrap")} />
+      ),
+      description: t("aboutPage.DescBootstrap"),
+    },
+    {
+      name: t("aboutPage.ChakraUI"),
+      icon: <img loading="lazy" src={Chakra} alt={t("aboutPage.ChakraUI")} />,
+      description: t("aboutPage.DescChakraUI"),
+    },
+  ];
   return (
     <Marquee gradient={false} speed={100} pauseOnHover={true}>
       {techStack.map((tech, index) => (
@@ -66,9 +87,9 @@ const TechSection: FC = () => {
             {tech.icon}
           </div>
           <div className="text-left flex flex-col justify-center h-full">
-            <h3 className="text-xl font-semibold text-[#051c29] dark:text-white">
+            <h2 className="text-xl font-semibold text-[#051c29] dark:text-white">
               {tech.name}
-            </h3>
+            </h2>
             <p className="text-sm text-gray-500 font-normal dark:text-gray-400">
               {tech.description}
             </p>
