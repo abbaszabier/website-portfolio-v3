@@ -1,10 +1,19 @@
 {
+  "tab": {
+    "PortfolioAbbas": "Portfolio Abbas",
+    "Home": "Beranda",
+    "About": "Tentang",
+    "Portfolio": "Portofolio",
+    "Contact": "Kontak"
+  },
+
   "nav": {
     "Home": "Beranda",
     "About": "Tentang",
     "Portfolio": "Portofolio",
     "Contact": "Kontak"
   },
+
   "homePage": {
     "HeadingLine1": "Hai!",
     "HeadingLine2": "Saya Abbas,",
@@ -72,6 +81,18 @@
     "2022": "2022",
     "6mos": "6 bln",
     "DownloadResume": "Unduh Resume"
+  },
+
+  "contactPage": {
+    "Title": "Hubungi Saya",
+    "SubTitle": "Jangan Ragu Untuk Menghubungi",
+    "Name": "Nama",
+    "YourName": "Nama Anda",
+    "Email": "Email",
+    "YourEmail": "Email Anda",
+    "Message": "Pesan",
+    "YourMessage": "Pesan Anda",
+    "Submit": "Kirim"
   },
 
   "settings": {

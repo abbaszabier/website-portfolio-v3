@@ -1,4 +1,12 @@
 {
+  "tab": {
+    "PortfolioAbbas": "Portfolio Abbas",
+    "Home": "Home",
+    "About": "About",
+    "Portfolio": "Portfolio",
+    "Contact": "Contact"
+  },
+
   "nav": {
     "Home": "Home",
     "About": "About",
@@ -73,6 +81,18 @@
     "2022": "2022",
     "6mos": "6 mos",
     "DownloadResume": "Download Resume"
+  },
+
+  "contactPage": {
+    "Title": "Contact Me",
+    "SubTitle": "Please Feel Free To Reach Out",
+    "Name": "Name",
+    "YourName": "Your Name",
+    "Email": "Email",
+    "YourEmail": "Your Email",
+    "Message": "Message",
+    "YourMessage": "Your Message",
+    "Submit": "Submit"
   },
 
   "settings": {

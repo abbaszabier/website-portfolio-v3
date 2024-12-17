@@ -1,4 +1,11 @@
 {
+  "tab": {
+    "PortfolioAbbas": "일하다 압바스",
+    "Home": "홈",
+    "About": "정보",
+    "Portfolio": "일하다",
+    "Contact": "연락처"
+  },
   "nav": {
     "Home": "홈",
     "About": "정보",
@@ -72,6 +79,19 @@
     "6mos": "6개월",
     "DownloadResume": "이력서 다운로드"
   },
+
+  "contactPage": {
+    "Title": "연락하기",
+    "SubTitle": "언제든지 연락해 주세요",
+    "Name": "이름",
+    "YourName": "당신의 이름",
+    "Email": "이메일",
+    "YourEmail": "당신의 이메일",
+    "Message": "메시지",
+    "YourMessage": "당신의 메시지",
+    "Submit": "제출"
+  },
+
   "settings": {
     "DarkMode": "다크모드",
     "SelectLanguage": "언어 설정"
