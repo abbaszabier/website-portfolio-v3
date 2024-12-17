@@ -3,6 +3,7 @@ import Profile from "@/assets/profile.webp";
 import SocialButton from "@/components/SosialButton.tsx";
 import { useTranslation } from "react-i18next";
 import { Github, Instagram, Linkedin, Twitter } from "@/components/icons";
+import { Button } from "@/components/ui/button";
 
 function Home() {
   const { t } = useTranslation();
@@ -16,7 +17,9 @@ function Home() {
   return (
     <>
       <Helmet>
-        <title>Portfolio Abbas - Home</title>
+        <title>
+          {t("tab.PortfolioAbbas")} - {t("tab.Home")}
+        </title>
       </Helmet>
       <div className="flex flex-col md:flex-row sm:justify-between xs:justify-center items-center h-[calc(100vh-10rem)] sm:px-12 xs:px-6 xs:pb-6">
         <div className="relative flex md:w-1/3 justify-center rounded-full shadow-lg bg-white dark:bg-[#051c29] items-center order-1 md:order-2 xs:mb-4">
@@ -54,19 +57,19 @@ function Home() {
             {t("homePage.Desc")}
           </p>
           <div className="flex flex-row gap-4 xs:gap-2 xs:flex-col xs:justify-center sm:justify-left items-center">
-            <button
+            <Button
               onClick={() => {
                 window.open(waLink, "_blank");
               }}
               className={`
     relative bg-[#051c29] text-white hover:bg-white hover:text-[#051c29] 
     dark:bg-white dark:text-[#051c29] dark:hover:bg-[#051c29] dark:hover:text-white
-    rounded-full inline-block font-semibold p-3 xs:p-2 w-full 
+    rounded-full inline-block font-semibold xs:p-2 w-full 
     sm:w-1/2 md:w-1/3 lg:w-1/4 shadow
   `}
             >
               {t("homePage.ButtonHireMe")}
-            </button>
+            </Button>
 
             <span className="text-[#051c29] xs:hidden dark:text-white">-</span>
 

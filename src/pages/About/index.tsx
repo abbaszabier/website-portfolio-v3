@@ -5,13 +5,16 @@ import LogoUniversity from "@/assets/LogoUniversity.svg";
 import LogoDealjava from "@/assets/LogoDealjava.png";
 import LogoInkor from "@/assets/LogoInkor.png";
 import { useTranslation } from "react-i18next";
+import { Button } from "@/components/ui/button";
 
 function About() {
   const { t } = useTranslation();
   return (
     <>
       <Helmet>
-        <title>Portfolio Abbas - About</title>
+        <title>
+          {t("tab.PortfolioAbbas")} - {t("tab.About")}
+        </title>
       </Helmet>
       <div className="mb-4">
         <div className="block text-center">
@@ -217,9 +220,9 @@ function About() {
       </div>
 
       <div className="px-12 xs:px-6 my-6 w-full flex justify-center items-center">
-        <button className="relative bg-[#051c29] text-white hover:bg-white hover:text-[#051c29] dark:bg-white dark:text-[#051c29] dark:hover:bg-[#051c29] dark:hover:text-white rounded-lg inline-block font-semibold p-3 xs:p-2 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 shadow">
+        <Button className="relative bg-[#051c29] text-white hover:bg-white hover:text-[#051c29] dark:bg-white dark:text-[#051c29] dark:hover:bg-[#051c29] dark:hover:text-white rounded-lg inline-block font-semibold xs:p-2 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 shadow">
           {t("aboutPage.DownloadResume")}
-        </button>
+        </Button>
       </div>
     </>
   );
