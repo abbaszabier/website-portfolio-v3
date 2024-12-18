@@ -4,6 +4,7 @@ import SocialButton from "@/components/SosialButton.tsx";
 import { useTranslation } from "react-i18next";
 import { Github, Instagram, Linkedin, Twitter } from "@/components/icons";
 import { Button } from "@/components/ui/button";
+import { motion } from "motion/react";
 
 function Home() {
   const { t } = useTranslation();
@@ -21,7 +22,13 @@ function Home() {
           {t("tab.PortfolioAbbas")} - {t("tab.Home")}
         </title>
       </Helmet>
-      <div className="flex flex-col md:flex-row sm:justify-between xs:justify-center items-center h-[calc(100vh-10rem)] sm:px-12 xs:px-6 xs:pb-6">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 1 }}
+        className="flex flex-col md:flex-row sm:justify-between xs:justify-center items-center h-[calc(100vh-10rem)] sm:px-12 xs:px-6 xs:pb-6"
+      >
         <div className="relative flex md:w-1/3 justify-center rounded-full shadow-lg bg-white dark:bg-[#051c29] items-center order-1 md:order-2 xs:mb-4">
           <img
             src={Profile}
@@ -30,7 +37,7 @@ function Home() {
             decoding="async"
             width="384"
             height="384"
-            className="w-60 xs:w-48 md:w-72 lg:w-80 xl:w-96 mx-auto hover:scale-110 transition-transform duration-300"
+            className="w-60 xs:w-48 md:w-72 lg:w-80 xl:w-96 mx-auto hover:scale-110"
             style={{
               background: "transparent",
               animation: "placeholder 1.2s ease-in-out infinite",
@@ -97,7 +104,7 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }

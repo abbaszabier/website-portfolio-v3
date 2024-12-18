@@ -11,6 +11,7 @@ import Bootstrap from "@/assets/Bootstrap.svg";
 import Chakra from "@/assets/ChakraUI.svg";
 import Marquee from "react-fast-marquee";
 import { TFunction } from "i18next";
+import { motion } from "motion/react";
 
 interface Tech {
   name: string;
@@ -75,7 +76,11 @@ const TechSection: React.FC<TechSectionProps> = ({ t }) => {
   return (
     <Marquee gradient={false} speed={100} pauseOnHover={true}>
       {techStack.map((tech, index) => (
-        <div
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1 }}
           key={index}
           className="mx-2 min-w-[275px] min-h-[100px] flex justify-center items-center border border-gray-100 bg-white dark:bg-[#051c29] dark:border-[#051c29] rounded-2xl shadow-sm hover:shadow gap-6 transition-shadow duration-300 transform"
         >
@@ -94,7 +99,7 @@ const TechSection: React.FC<TechSectionProps> = ({ t }) => {
               {tech.description}
             </p>
           </div>
-        </div>
+        </motion.div>
       ))}
     </Marquee>
   );

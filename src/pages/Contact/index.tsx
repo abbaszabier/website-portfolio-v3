@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import MyMap from "./components/MyMap";
 import { useTranslation } from "react-i18next";
+import { motion } from "motion/react";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -47,7 +48,13 @@ function Contact() {
           {t("tab.PortfolioAbbas")} - {t("tab.Contact")}
         </title>
       </Helmet>
-      <div className="px-12 xs:px-6 w-full mx-auto">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 1 }}
+        className="px-12 xs:px-6 w-full mx-auto"
+      >
         <div className="flex w-full flex-col order-2 md:order-1 text-center">
           <h1 className="text-[24px] sm:text-[26px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[52px] font-normal text-gray-900 dark:text-gray-200 leading-snug">
             <span className="font-bold text-[#051c29] dark:text-white">
@@ -128,7 +135,7 @@ function Contact() {
             <MyMap />
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }
