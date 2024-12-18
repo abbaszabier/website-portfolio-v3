@@ -31,7 +31,7 @@
 
   "aboutPage": {
     "Title": "About Me",
-    "SubTitle": "Discover Who I Am",
+    "SubTitle": "Discover who I am",
     "Desc": "I am a Frontend Web Developer with over three years of professional experience. I specialize in creating responsive, interactive, and user-focused web applications using modern technologies such as React JS or Next JS. I have a proven track record of collaborating effectively with UI/UX designers and backend developers to deliver seamless and high-quality user experiences. Passionate about continuous learning, I actively engage in personal projects and stay updated with the latest industry trends to enhance my skills and contribute to innovative solutions.",
     "JavaScript": "JavaScript",
     "DescJavaScript": "Programming Language",
@@ -85,7 +85,7 @@
 
   "contactPage": {
     "Title": "Contact Me",
-    "SubTitle": "Please Feel Free To Reach Out",
+    "SubTitle": "Need more information? Feel free to contact me",
     "Name": "Name",
     "YourName": "Your Name",
     "Email": "Email",

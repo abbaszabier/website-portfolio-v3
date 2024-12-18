@@ -31,8 +31,8 @@
 
   "aboutPage": {
     "Title": "Tentang Saya",
-    "SubTitle": "Temukan Siapa Saya",
-    "Desc": "Saya adalah Frontend Web Developer dengan pengalaman profesional lebih dari tiga tahun. Saya mengkhususkan diri dalam membuat aplikasi web yang responsif, interaktif, dan berfokus pada pengguna menggunakan teknologi modern seperti React JS atau Next JS. Saya memiliki rekam jejak yang terbukti dalam bekerja sama secara efektif dengan desainer UI/UX dan pengembang backend untuk memberikan pengalaman pengguna yang mulus dan berkualitas tinggi. Dengan semangat belajar yang berkelanjutan, saya aktif terlibat dalam proyek pribadi dan terus mengikuti tren industri terbaru untuk meningkatkan keterampilan saya dan berkontribusi pada solusi inovatif.",
+    "SubTitle": "Temukan siapa saya",
+    "Desc": "Saya adalah Frontend Web Developer dengan pengalaman lebih dari tiga tahun. Saya memiliki passion dalam membuat aplikasi web yang responsif, interaktif, dan berfokus pada pengguna menggunakan teknologi modern seperti React JS atau Next JS. Saya memiliki pengalaman dalam bekerja sama secara efektif dengan UI/UX design dan backend developer untuk memberikan pengalaman pengguna yang baik dan berkualitas tinggi. Selain itu, saya aktif dalam proyek pribadi dan terus mengikuti tren industri terbaru untuk meningkatkan keterampilan saya dan berkontribusi pada solusi inovatif.",
     "JavaScript": "JavaScript",
     "DescJavaScript": "Bahasa Pemrograman",
     "TypeScript": "TypeScript",
@@ -85,7 +85,7 @@
 
   "contactPage": {
     "Title": "Hubungi Saya",
-    "SubTitle": "Jangan Ragu Untuk Menghubungi",
+    "SubTitle": "Butuh informasi lebih lanjut? Jangan ragu untuk menghubungi saya",
     "Name": "Nama",
     "YourName": "Nama Anda",
     "Email": "Email",
