@@ -228,7 +228,10 @@ function MainLayout() {
         <nav>
           <ul className="flex xs:flex-row lg:flex-col justify-between lg:space-y-2 lg:justify-start">
             {sidebarItems.map((item, index) => {
-              const isActive = location.pathname === item.path;
+              const isActive =
+                location.pathname === item.path ||
+                (location.pathname.includes("portfolio") &&
+                  item.path === "/portfolio");
               const IconComponent = item.icon;
               return (
                 <li key={index} className="xs:px-4">
