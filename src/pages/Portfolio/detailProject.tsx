@@ -1,40 +1,36 @@
 import { Helmet } from "react-helmet-async";
 import { useState } from "react";
-import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 import { motion } from "motion/react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import projectData from "@/lib/data.json";
-
+import StackIcon from "tech-stack-icons";
+import ReactDOM from "react-dom";
+import { Github } from "@/components/icons";
+import { ArrowCircleLeft, Briefcase, CloseCircle, Link } from "iconsax-react";
 interface Project {
   id: number;
   title: string;
   description: string;
   imageUrl: string;
+  techStack: string[];
+  linkRepo: string;
+  linkWeb: string;
+  screenshots: string[];
   category: "react-js" | "next-js";
 }
 
 const projects: Project[] = projectData.map((project) => ({
   ...project,
   category: project.category as "react-js" | "next-js",
+  screenshots: project.screenshots,
 }));
 
 function DetailProject() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
   const { id } = useParams();
   const { t } = useTranslation();
-  const phoneNumber = "6288211156895";
-  const message = `Hi, my name is ${formData.name}. ${formData.message}`;
-  const waLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-    message
-  )}`;
+  const navigate = useNavigate();
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const project = projects.find((project) => project.id === Number(id));
   if (!project?.id) {
@@ -47,24 +43,19 @@ function DetailProject() {
     );
   }
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    window.open(waLink, "_blank");
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
+  const renderTechIcon = (tech: unknown) => {
+    switch (tech) {
+      case "React JS":
+        return <StackIcon name="reactjs" className="h-8 w-8 flex" />;
+      case "Next JS":
+        return <StackIcon name="nextjs2" className="h-8 w-8" />;
+      case "Tailwind CSS":
+        return <StackIcon name="tailwindcss" className="h-8 w-8" />;
+      case "React Query":
+        return <StackIcon name="reactquery" className="h-8 w-8" />;
+      default:
+        return null;
+    }
   };
 
   return (
@@ -79,85 +70,106 @@ function DetailProject() {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 1 }}
-        className="px-12 xs:px-6 w-full mx-auto"
+        className="px-12 xs:px-6 w-full"
       >
-        <div className="flex w-full flex-col order-2 md:order-1 text-center">
-          <h1 className="text-[24px] sm:text-[26px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[52px] font-normal text-gray-900 dark:text-gray-200 leading-snug">
-            <span className="font-bold text-[#051c29] dark:text-white">
-              {t("contactPage.Title")} | {project?.title}
-            </span>
-          </h1>
+        <div className="flex w-full flex-col order-2 md:order-1 justify-start items-start text-center mb-4">
+          <div className="flex gap-2 items-center text-[#051c29] dark:text-white">
+            <ArrowCircleLeft
+              size={28}
+              className="cursor-pointer"
+              onClick={() => {
+                navigate("/portfolio");
+              }}
+            />
+            <h1 className="text-[24px] sm:text-[26px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[52px] font-normal text-gray-900 dark:text-gray-200 leading-snug">
+              <span className="font-bold text-[#051c29] dark:text-white">
+                {project?.title}
+              </span>
+            </h1>
+          </div>
           <p className="text-gray-500 xs:leading-5 font-light dark:text-gray-400 xs:text-[12px] text-base">
-            {t("contactPage.SubTitle")}
+            {project?.description}
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row xs:gap-4 gap-8 w-full mt-8">
-          <div className="flex-1">
-            <form
-              onSubmit={handleSubmit}
-              className="h-full flex flex-col justify-center"
+        <div className="flex w-full justify-between gap-4 mt-2 border-t border-b border-gray-200 dark:border-gray-700 py-3">
+          <div className="flex items-center gap-4">
+            <div className="flex items-center gap-1 text-[#051c29] dark:text-white">
+              <Briefcase size={18} />
+              <span>Real Project</span>
+            </div>
+
+            <a
+              href={"#"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 hover:underline text-[#051c29] dark:text-white"
             >
-              <div>
-                <Label
-                  htmlFor="name"
-                  className="text-[#051c29] dark:text-white"
-                >
-                  {t("contactPage.Name")}
-                </Label>
-                <Input
-                  type="text"
-                  id="name"
-                  name="name"
-                  className="text-[#051c29] dark:text-white mb-4 dark:bg-[#051c29]"
-                  value={formData.name}
-                  onChange={handleChange}
-                  placeholder={t("contactPage.YourName")}
-                  required
-                />
+              <Github />
+              <span>Repository</span>
+            </a>
+
+            <a
+              href={"#"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 hover:underline text-[#051c29] dark:text-white"
+            >
+              <Link size={18} />
+              <span>Live Site</span>
+            </a>
+          </div>
+
+          <div className="flex items-center gap-4">
+            {project?.techStack?.map((tech, index) => (
+              <div
+                key={index}
+                className="flex items-center cursor-pointer"
+                title={tech === "React JS" ? "React JS" : tech}
+              >
+                {renderTechIcon(tech)}
               </div>
-              <div>
-                <Label
-                  htmlFor="email"
-                  className="text-[#051c29] dark:text-white"
-                >
-                  {t("contactPage.Email")}
-                </Label>
-                <Input
-                  type="email"
-                  id="email"
-                  name="email"
-                  className="text-[#051c29] dark:text-white mb-4 dark:bg-[#051c29]"
-                  value={formData.email}
-                  onChange={handleChange}
-                  placeholder={t("contactPage.YourEmail")}
-                  required
-                />
-              </div>
-              <div>
-                <Label
-                  htmlFor="message"
-                  className="text-[#051c29] dark:text-white mb-4"
-                >
-                  {t("contactPage.Message")}
-                </Label>
-                <Textarea
-                  id="message"
-                  name="message"
-                  className="text-[#051c29] dark:text-white mb-4 dark:bg-[#051c29]"
-                  value={formData.message}
-                  onChange={handleChange}
-                  placeholder={t("contactPage.YourMessage")}
-                  rows={4}
-                  required
-                />
-              </div>
-              <Button type="submit" className="w-full xs:mb-4">
-                {t("contactPage.Submit")}
-              </Button>
-            </form>
+            ))}
           </div>
         </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
+          {project?.screenshots?.map((screenshot, index) => (
+            <div key={index} className="relative">
+              <img
+                src={screenshot}
+                alt={`Screenshot ${index + 1}`}
+                className="cursor-pointer w-full h-auto rounded-lg shadow-md"
+                onClick={() => setSelectedImage(screenshot)}
+              />
+            </div>
+          ))}
+        </div>
+        {selectedImage &&
+          ReactDOM.createPortal(
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="fixed inset-0 bg-gray-50 bg-opacity-20 backdrop-blur-md flex items-center justify-center z-[100000000]"
+            >
+              <div className="relative w-2/5 xs:w-3/4">
+                <button
+                  className="absolute top-2 right-2"
+                  onClick={() => setSelectedImage(null)}
+                >
+                  <CloseCircle color="#051c29" size={24} />
+                </button>
+                <img
+                  src={selectedImage}
+                  alt="Selected"
+                  className="w-full h-auto rounded-lg shadow-md"
+                />
+              </div>
+            </motion.div>,
+            document.body
+          )}
       </motion.div>
     </>
   );
