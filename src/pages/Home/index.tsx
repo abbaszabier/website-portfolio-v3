@@ -37,7 +37,7 @@ function Home() {
             decoding="async"
             width="384"
             height="384"
-            className="w-60 xs:w-48 md:w-72 lg:w-80 xl:w-96 mx-auto hover:scale-110"
+            className="w-60 xs:w-48 md:w-72 lg:w-80 xl:w-96 2xl:w-auto hover:scale-110"
             style={{
               background: "transparent",
               animation: "placeholder 1.2s ease-in-out infinite",
