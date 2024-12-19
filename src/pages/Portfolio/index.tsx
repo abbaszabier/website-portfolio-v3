@@ -42,7 +42,7 @@ function Portfolio() {
             }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <Card className="shadow-md">
+            <Card className="shadow-md bg-white dark:bg-[#051c29] dark:text-white">
               <img
                 src={project.imageUrl}
                 alt={project.title}
@@ -89,7 +89,7 @@ function Portfolio() {
         </span>
       </h1>
       <p className="text-gray-500 text-center xs:leading-5 font-light dark:text-gray-400 xs:text-[12px] text-base">
-        Here are some of the projects I have worked on.
+        Here are some selected projects I have worked on.
       </p>
       <div className="flex flex-col items-center mt-4 w-full">
         <Tabs defaultValue="all" className="flex flex-col w-full">
