@@ -126,7 +126,7 @@ function About() {
                 </p>
               </div>
             </div>
-            <div className="flex items-start relative left-5">
+            <div className="flex items-start relative left-5 pr-5">
               <div className="w-2 h-2 bg-gray-400 rounded-full mt-2.5 mr-3"></div>
               <div className="w-full">
                 <div className="flex flex-col md:flex-row md:justify-between md:items-center">
@@ -162,7 +162,7 @@ function About() {
                 </p>
               </div>
             </div>
-            <div className="flex items-start relative left-5">
+            <div className="flex items-start relative left-5 pr-5">
               <div className="w-2 h-2 bg-gray-400 rounded-full mt-2.5 mr-3"></div>
               <div className="w-full">
                 <div className="flex flex-col md:flex-row md:justify-between md:items-center">
@@ -193,7 +193,7 @@ function About() {
                 </p>
               </div>
             </div>
-            <div className="flex items-start relative left-5">
+            <div className="flex items-start relative left-5 pr-5">
               <div className="w-2 h-2 bg-gray-400 rounded-full mt-2.5 mr-3"></div>
               <div className="w-full">
                 <div className="flex flex-col md:flex-row md:justify-between md:items-center">
@@ -216,7 +216,7 @@ function About() {
                 style={{ height: "calc(86%)" }}
               ></div>
             </div>
-            <div className="flex items-start mt-[13px] relative left-5">
+            <div className="flex items-start mt-[13px] relative left-5 pr-5">
               <div className="w-2 h-2 bg-gray-400 rounded-full mt-2.5 mr-3"></div>
               <div className="w-full">
                 <div className="flex flex-col md:flex-row md:justify-between md:items-center">
