@@ -33,6 +33,7 @@
     "rollup-plugin-terser": "^7.0.2",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7",
+    "tech-stack-icons": "^2.1.0",
     "zustand": "^5.0.2"
   },
   "devDependencies": {
