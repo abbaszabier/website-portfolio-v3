@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "motion/react";
 import { useParams, useNavigate } from "react-router-dom";
-import projectData from "@/lib/data.json";
+import projectData from "@/lib/data";
 import StackIcon from "tech-stack-icons";
 import ReactDOM from "react-dom";
 import { Github } from "@/components/icons";
@@ -11,6 +11,7 @@ import { ArrowCircleLeft, Briefcase, CloseCircle, Link } from "iconsax-react";
 interface Project {
   id: number;
   title: string;
+  type: string;
   description: string;
   imageUrl: string;
   techStack: string[];
@@ -46,13 +47,13 @@ function DetailProject() {
   const renderTechIcon = (tech: unknown) => {
     switch (tech) {
       case "React JS":
-        return <StackIcon name="reactjs" className="h-8 w-8 flex" />;
+        return <StackIcon name="reactjs" className="h-6 w-6" />;
       case "Next JS":
-        return <StackIcon name="nextjs2" className="h-8 w-8" />;
+        return <StackIcon name="nextjs2" className="h-6 w-6" />;
       case "Tailwind CSS":
-        return <StackIcon name="tailwindcss" className="h-8 w-8" />;
+        return <StackIcon name="tailwindcss" className="h-6 w-6" />;
       case "React Query":
-        return <StackIcon name="reactquery" className="h-8 w-8" />;
+        return <StackIcon name="reactquery" className="h-6 w-6" />;
       default:
         return null;
     }
@@ -87,37 +88,35 @@ function DetailProject() {
               </span>
             </h1>
           </div>
-          <p className="text-gray-500 xs:leading-5 font-light dark:text-gray-400 xs:text-[12px] text-base">
+          <p className="text-gray-500 text-left xs:leading-5 font-light dark:text-gray-400 xs:text-[12px] text-base">
             {project?.description}
           </p>
         </div>
 
-        <div className="flex w-full justify-between gap-4 mt-2 border-t border-b border-gray-200 dark:border-gray-700 py-3">
+        <div className="flex xs:flex-col w-full justify-between gap-5 mt-2 border-t border-b border-gray-200 dark:border-gray-700 py-3">
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-1 text-[#051c29] dark:text-white">
               <Briefcase size={18} />
-              <span>Real Project</span>
+              <span className="text-sm">{project?.type}</span>
             </div>
 
-            <a
-              href={"#"}
-              target="_blank"
+            <div
               rel="noopener noreferrer"
-              className="flex items-center gap-1 hover:underline text-[#051c29] dark:text-white"
+              className="flex items-center gap-1 hover:underline text-[#051c29] dark:text-white cursor-pointer"
+              onClick={() => window.open(project?.linkRepo, "_blank")}
             >
               <Github />
-              <span>Repository</span>
-            </a>
+              <span className="text-sm">Repository</span>
+            </div>
 
-            <a
-              href={"#"}
-              target="_blank"
+            <div
               rel="noopener noreferrer"
-              className="flex items-center gap-1 hover:underline text-[#051c29] dark:text-white"
+              className="flex items-center gap-1 hover:underline text-[#051c29] dark:text-white cursor-pointer"
+              onClick={() => window.open(project?.linkWeb, "_blank")}
             >
               <Link size={18} />
-              <span>Live Site</span>
-            </a>
+              <span className="text-sm">Live Site</span>
+            </div>
           </div>
 
           <div className="flex items-center gap-4">

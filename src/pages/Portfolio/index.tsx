@@ -5,7 +5,8 @@ import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { motion } from "motion/react";
 import { useNavigate } from "react-router-dom";
-import projectData from "@/lib/data.json";
+import projectData from "@/lib/data";
+import ProfileLogo from "@/assets/icon.webp";
 
 interface Project {
   id: number;
@@ -46,7 +47,7 @@ function Portfolio() {
               <img
                 src={project.imageUrl}
                 alt={project.title}
-                className="w-full h-48 object-cover rounded-t-md"
+                className="w-full h-[240px] rounded-t-md"
               />
               <CardHeader>
                 <CardTitle>{project.title}</CardTitle>
@@ -83,6 +84,16 @@ function Portfolio() {
           {t("tab.PortfolioAbbas")} - {t("tab.Portfolio")}
         </title>
       </Helmet>
+      <div className="block text-center">
+        <img
+          src={ProfileLogo}
+          alt="Avatar"
+          loading="eager"
+          width="80"
+          height="80"
+          className="w-20 mx-auto rounded-full shadow bg-white dark:bg-[#051c29] p-2"
+        />
+      </div>
       <h1 className="text-[24px] text-center sm:text-[26px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[52px] font-normal text-gray-900 dark:text-gray-200 leading-snug">
         <span className="font-bold text-[#051c29] dark:text-white">
           My Portfolio
