@@ -44,11 +44,13 @@ function Portfolio() {
             transition={{ type: "spring", stiffness: 300 }}
           >
             <Card className="shadow-md bg-white dark:bg-[#051c29] dark:text-white">
-              <img
-                src={project.imageUrl}
-                alt={project.title}
-                className="w-full h-[240px] rounded-t-md"
-              />
+              <div className="w-full h-[240px] overflow-hidden rounded-t-md">
+                <img
+                  src={project.imageUrl}
+                  alt={project.title}
+                  className="w-full h-full object-cover scale-125"
+                />
+              </div>
               <CardHeader>
                 <CardTitle>{project.title}</CardTitle>
               </CardHeader>
