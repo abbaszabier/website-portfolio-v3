@@ -8,10 +8,13 @@ import StackIcon from "tech-stack-icons";
 import ReactDOM from "react-dom";
 import { Github } from "@/components/icons";
 import { ArrowCircleLeft, Briefcase, CloseCircle, Link } from "iconsax-react";
+import Zustand from "@/assets/Zustand.svg";
+
 interface Project {
   id: number;
   title: string;
   type: string;
+  isClient: string | null;
   description: string;
   imageUrl: string;
   techStack: string[];
@@ -54,6 +57,23 @@ function DetailProject() {
         return <StackIcon name="tailwindcss" className="h-6 w-6" />;
       case "React Query":
         return <StackIcon name="reactquery" className="h-6 w-6" />;
+      case "Chakra UI":
+        return <StackIcon name="chakraui" className="h-6 w-6" />;
+      case "Typescript":
+        return <StackIcon name="typescript" className="h-6 w-6" />;
+      case "Javascript":
+        return <StackIcon name="javascript" className="h-6 w-6" />;
+      case "Zustand":
+        return (
+          <img
+            loading="lazy"
+            src={Zustand}
+            alt={t("aboutPage.Zustand")}
+            className="h-6 w-6"
+          />
+        );
+      case "GraphQL":
+        return <StackIcon name="graphql" className="h-6 w-6" />;
       default:
         return null;
     }
@@ -97,7 +117,9 @@ function DetailProject() {
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-1 text-[#051c29] dark:text-white">
               <Briefcase size={18} />
-              <span className="text-sm">{project?.type}</span>
+              <span className="text-sm">
+                {project?.type} ({project?.isClient})
+              </span>
             </div>
 
             <div
@@ -132,7 +154,7 @@ function DetailProject() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 my-8">
           {project?.screenshots?.map((screenshot, index) => (
             <div key={index} className="relative">
               <img
@@ -153,7 +175,7 @@ function DetailProject() {
               transition={{ duration: 0.3 }}
               className="fixed inset-0 bg-gray-50 bg-opacity-20 backdrop-blur-md flex items-center justify-center z-[100000000]"
             >
-              <div className="relative w-2/5 xs:w-3/4">
+              <div className="relative w-3/5 xs:w-5/6">
                 <button
                   className="absolute top-2 right-2"
                   onClick={() => setSelectedImage(null)}
