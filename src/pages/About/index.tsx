@@ -1,6 +1,6 @@
 import TechSection from "@/components/TechSection";
 import { Helmet } from "react-helmet-async";
-import ProfileLogo from "@/assets/icon.webp";
+import ProfileLogo from "@/assets/icon2.webp";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { motion } from "motion/react";

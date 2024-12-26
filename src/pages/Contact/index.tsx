@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import MyMap from "./components/MyMap";
 import { useTranslation } from "react-i18next";
 import { motion } from "motion/react";
-import ProfileLogo from "@/assets/icon.webp";
+import ProfileLogo from "@/assets/icon4.webp";
 
 function Contact() {
   const [formData, setFormData] = useState({

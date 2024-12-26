@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import { motion } from "motion/react";
 import { useNavigate } from "react-router-dom";
 import projectData from "@/lib/data";
-import ProfileLogo from "@/assets/icon.webp";
+import ProfileLogo from "@/assets/icon3.webp";
 
 interface Project {
   id: number;

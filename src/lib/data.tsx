@@ -1,5 +1,6 @@
 import thumbnailDiyo from "../assets/thumbnailDiyo.webp";
 import thumbnailSKT from "../assets/thumbnailSKT.webp";
+import thumbnailChappy from "../assets/thumbnailChappy.webp";
 import diyo1 from "../image/diyo/ssDiyo1.webp";
 import diyo2 from "../image/diyo/ssDiyo2.webp";
 import diyo3 from "../image/diyo/ssDiyo3.webp";
@@ -15,6 +16,21 @@ import skt3 from "../image/SKT/ssSkt3.webp";
 import skt4 from "../image/SKT/ssSkt4.webp";
 import skt5 from "../image/SKT/ssSkt5.webp";
 import skt6 from "../image/SKT/ssSkt6.webp";
+import chappy1 from "../image/Chappy/ssChappy1.webp";
+import chappy2 from "../image/Chappy/ssChappy2.webp";
+import chappy3 from "../image/Chappy/ssChappy3.webp";
+import chappy4 from "../image/Chappy/ssChappy4.webp";
+import chappy5 from "../image/Chappy/ssChappy5.webp";
+import chappy6 from "../image/Chappy/ssChappy6.webp";
+import chappy7 from "../image/Chappy/ssChappy7.webp";
+import chappy8 from "../image/Chappy/ssChappy8.webp";
+import chappy9 from "../image/Chappy/ssChappy9.webp";
+import chappy10 from "../image/Chappy/ssChappy10.webp";
+import chappy11 from "../image/Chappy/ssChappy11.webp";
+import chappy12 from "../image/Chappy/ssChappy12.webp";
+import chappy13 from "../image/Chappy/ssChappy13.webp";
+import chappy14 from "../image/Chappy/ssChappy14.webp";
+import chappy15 from "../image/Chappy/ssChappy15.webp";
 
 const projectData = [
   {
@@ -64,20 +80,32 @@ const projectData = [
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "Chappy",
     type: "Real Project",
-    isClient: "🇮🇩",
+    isClient: "🇰🇷",
     description:
-      "An e-commerce website developed using React.js and Zustand for state management.",
-    imageUrl: "https://via.placeholder.com/300x200",
+      "An e-learning platform dashboard for students built with React JS and Tailwind CSS.",
+    imageUrl: thumbnailChappy,
     category: "react-js",
-    techStack: ["React JS", "React Query", "Tailwind CSS"],
-    linkRepo: "https://x.com/abzabier_",
-    linkWeb: "https://x.com/abzabier_",
+    techStack: ["Typescript", "React JS", "Tailwind CSS", "Zustand"],
+    linkRepo: "https://gitlab.com/inkor-system/chappy",
+    linkWeb: "https://gitlab.com/inkor-system/chappy",
     screenshots: [
-      "https://via.placeholder.com/300x200",
-      "https://via.placeholder.com/300x200",
-      "https://via.placeholder.com/300x200",
+      chappy1,
+      chappy2,
+      chappy3,
+      chappy4,
+      chappy5,
+      chappy6,
+      chappy7,
+      chappy8,
+      chappy9,
+      chappy10,
+      chappy11,
+      chappy12,
+      chappy13,
+      chappy14,
+      chappy15,
     ],
   },
   {
