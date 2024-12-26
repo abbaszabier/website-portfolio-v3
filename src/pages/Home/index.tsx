@@ -4,13 +4,28 @@ import SocialButton from "@/components/SosialButton.tsx";
 import { useTranslation } from "react-i18next";
 import { Github, Instagram, Linkedin, Twitter } from "@/components/icons";
 import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
 import { motion } from "motion/react";
+import { useState } from "react";
 
 function Home() {
   const { t } = useTranslation();
   const phoneNumber = "6288211156895";
-  const message =
-    "Hi, my name is (type your name) from (type your country). I would like to hire you. Are you currently available?";
+  const [name, setName] = useState("");
+  const [country, setCountry] = useState("");
+
+  const message = `Hi, my name is ${name ? name : "(your name)"} from ${
+    country ? country : "(your country)"
+  }. I would like to hire you. Are you currently available?`;
   const waLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message
   )}`;
@@ -64,19 +79,70 @@ function Home() {
             {t("homePage.Desc")}
           </p>
           <div className="flex flex-row gap-4 xs:gap-2 xs:flex-col xs:justify-center sm:justify-left items-center">
-            <Button
-              onClick={() => {
-                window.open(waLink, "_blank");
-              }}
-              className={`
-    relative bg-[#051c29] text-white hover:bg-white hover:text-[#051c29] 
-    dark:bg-white dark:text-[#051c29] dark:hover:bg-[#051c29] dark:hover:text-white
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button
+                  className={`
+    relative bg-[#051c29] text-white 
+    dark:bg-white dark:text-[#051c29]
     rounded-full inline-block font-semibold xs:p-2 w-full 
     sm:w-1/2 md:w-1/3 lg:w-1/4 shadow
   `}
-            >
-              {t("homePage.ButtonHireMe")}
-            </Button>
+                >
+                  {t("homePage.ButtonHireMe")}
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-[425px]">
+                <DialogHeader>
+                  <DialogTitle className="text-[#051c29] dark:text-white xs:text-[24px] text-[28px] text-center">
+                    Hire Me
+                  </DialogTitle>
+                  <DialogDescription className="text-[#051c29] dark:text-white text-center">
+                    The message will be sent to WhatsApp.
+                  </DialogDescription>
+                </DialogHeader>
+                <div className="grid gap-4 py-2">
+                  <div className="grid grid-cols-1 items-center gap-4">
+                    <Input
+                      onChange={(e) => setName(e.target.value)}
+                      value={name}
+                      id="name"
+                      placeholder="Type your name"
+                      className="col-span-3 text-[#051c29] dark:text-white"
+                      required
+                    />
+                  </div>
+                  <div className="grid grid-cols-1 items-center gap-4">
+                    <Input
+                      id="country"
+                      onChange={(e) => setCountry(e.target.value)}
+                      value={country}
+                      placeholder="Type your country"
+                      className="col-span-3 text-[#051c29] dark:text-white"
+                      required
+                    />
+                  </div>
+                </div>
+                <DialogDescription className="text-[#051c29] dark:text-white italic">
+                  <span className="not-italic font-bold	">Message: </span>"
+                  {message}"
+                </DialogDescription>
+                <DialogFooter>
+                  <Button
+                    type="submit"
+                    onClick={() => {
+                      window.open(waLink, "_blank");
+                      setName("");
+                      setCountry("");
+                    }}
+                    disabled={!name || !country}
+                    className="w-full"
+                  >
+                    Send
+                  </Button>
+                </DialogFooter>
+              </DialogContent>
+            </Dialog>
 
             <span className="text-[#051c29] xs:hidden dark:text-white">-</span>
 
