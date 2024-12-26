@@ -154,7 +154,7 @@ function DetailProject() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 my-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
           {project?.screenshots?.map((screenshot, index) => (
             <div key={index} className="relative">
               <img
