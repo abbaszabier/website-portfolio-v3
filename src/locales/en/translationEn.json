@@ -26,7 +26,13 @@
     "Github": "Github",
     "Instagram": "Instagram",
     "Linkedin": "Linkedin",
-    "Twitter": "Twitter"
+    "Twitter": "Twitter",
+    "MessageDesc": "The message will be sent to WhatsApp.",
+    "Message": "Message: ",
+    "TypeYourName": "Type your name",
+    "TypeYourCountry": "Type your country",
+    "YourName": "(Your Name)",
+    "YourCountry": "(Your Country)"
   },
 
   "aboutPage": {

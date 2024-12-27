@@ -24,7 +24,13 @@
     "Github": "Github",
     "Instagram": "Instagram",
     "Linkedin": "Linkedin",
-    "Twitter": "Twitter"
+    "Twitter": "Twitter",
+    "MessageDesc": "메시지는 WhatsApp으로 전송됩니다.",
+    "Message": "메시지: ",
+    "TypeYourName": "이름을 입력하세요",
+    "TypeYourCountry": "국가를 입력하세요",
+    "YourName": "(당신의 이름)",
+    "YourCountry": "(당신의 국가)"
   },
   "aboutPage": {
     "Title": "소개",

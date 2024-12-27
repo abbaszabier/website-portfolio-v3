@@ -23,8 +23,10 @@ function Home() {
   const [name, setName] = useState("");
   const [country, setCountry] = useState("");
 
-  const message = `Hi, my name is ${name ? name : "(your name)"} from ${
-    country ? country : "(your country)"
+  const message = `Hi, my name is ${
+    name ? name : t("homePage.YourName")
+  } from ${
+    country ? country : t("homePage.YourCountry")
   }. I would like to hire you. Are you currently available?`;
   const waLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message
@@ -95,10 +97,10 @@ function Home() {
               <DialogContent className="sm:max-w-[425px]">
                 <DialogHeader>
                   <DialogTitle className="text-[#051c29] dark:text-white xs:text-[24px] text-[28px] text-center">
-                    Hire Me
+                    {t("homePage.ButtonHireMe")}
                   </DialogTitle>
                   <DialogDescription className="text-[#051c29] dark:text-white text-center">
-                    The message will be sent to WhatsApp.
+                    {t("homePage.MessageDesc")}
                   </DialogDescription>
                 </DialogHeader>
                 <div className="grid gap-4 py-2">
@@ -107,7 +109,7 @@ function Home() {
                       onChange={(e) => setName(e.target.value)}
                       value={name}
                       id="name"
-                      placeholder="Type your name"
+                      placeholder={t("homePage.TypeYourName")}
                       className="col-span-3 text-[#051c29] dark:text-white"
                       required
                     />
@@ -117,15 +119,17 @@ function Home() {
                       id="country"
                       onChange={(e) => setCountry(e.target.value)}
                       value={country}
-                      placeholder="Type your country"
+                      placeholder={t("homePage.TypeYourCountry")}
                       className="col-span-3 text-[#051c29] dark:text-white"
                       required
                     />
                   </div>
                 </div>
                 <DialogDescription className="text-[#051c29] dark:text-white italic">
-                  <span className="not-italic font-bold	">Message: </span>"
-                  {message}"
+                  <span className="not-italic font-bold	">
+                    {t("homePage.Message")}{" "}
+                  </span>
+                  "{message}"
                 </DialogDescription>
                 <DialogFooter>
                   <Button
