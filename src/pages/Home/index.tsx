@@ -142,7 +142,7 @@ function Home() {
                     disabled={!name || !country}
                     className="w-full"
                   >
-                    Send
+                    {t("homePage.Send")}
                   </Button>
                 </DialogFooter>
               </DialogContent>

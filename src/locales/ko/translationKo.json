@@ -30,7 +30,8 @@
     "TypeYourName": "이름을 입력하세요",
     "TypeYourCountry": "국가를 입력하세요",
     "YourName": "(당신의 이름)",
-    "YourCountry": "(당신의 국가)"
+    "YourCountry": "(당신의 국가)",
+    "Send": "보내기"
   },
   "aboutPage": {
     "Title": "소개",
