@@ -122,7 +122,7 @@ function MainLayout() {
       </div>
 
       {/* Main content area */}
-      <div className="relative z-10 flex-1 lg:ml-6 lg:rounded-xl sm:overflow-y-auto h-[calc(100vh-3rem)] border border-gray-200 shadow-sm backdrop-blur-sm bg-opacity-80 bg-white dark:bg-opacity-75 dark:bg-gray-800 dark:border-gray-700">
+      <div className="relative z-10 flex-1 lg:ml-6 lg:rounded-xl sm:overflow-y-auto h-[calc(100vh-3rem)] border border-gray-200 shadow-sm backdrop-blur-sm bg-opacity-80 bg-white dark:bg-opacity-75 dark:bg-gray-800 dark:border-gray-800">
         <div className="sticky top-0 right-0 z-50 justify-end flex px-6 pt-6 w-full">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
