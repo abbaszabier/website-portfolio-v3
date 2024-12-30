@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { motion } from "motion/react";
 import { useNavigate } from "react-router-dom";
-import projectData from "@/lib/data";
+import useProjectData from "@/lib/data";
 import ProfileLogo from "@/assets/icon3.webp";
 
 interface Project {
@@ -16,14 +16,14 @@ interface Project {
   category: "react-js" | "next-js";
 }
 
-const projects: Project[] = projectData.map((project) => ({
-  ...project,
-  category: project.category as "react-js" | "next-js",
-}));
-
 function Portfolio() {
   const { t } = useTranslation();
   const navigate = useNavigate();
+
+  const projects: Project[] = useProjectData().map((project) => ({
+    ...project,
+    category: project.category as "react-js" | "next-js",
+  }));
 
   const renderProjects = (category: "react-js" | "next-js" | "all") => {
     const filteredProjects =

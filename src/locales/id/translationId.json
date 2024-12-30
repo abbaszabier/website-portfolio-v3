@@ -90,6 +90,26 @@
     "DownloadResume": "Unduh Resume"
   },
 
+  "portfolioPage": {
+    "diyoPos": {
+      "Title": "DIYO POS",
+      "Type": "Proyek Nyata",
+      "Desc": "Aplikasi point of sale untuk restoran dan kafe yang dibangun dengan React JS dan Chakra UI."
+    },
+    "sktSurveyLink": {
+      "Title": "SKT Survey Link",
+      "Type": "Proyek Nyata",
+      "Desc": "Aplikasi link survei untuk SKT yang dibangun dengan React JS dan Tailwind CSS."
+    },
+    "chappy": {
+      "Title": "Chappy",
+      "Type": "Proyek Nyata",
+      "Desc": "Dashboard platform e-learning untuk siswa yang dibangun dengan React JS dan Tailwind CSS."
+    },
+    "Repository": "Repository",
+    "LiveSite": "Demo",
+    "ProjectNotFound": "Proyek tidak ditemukan"
+  },
   "contactPage": {
     "Title": "Hubungi Saya",
     "SubTitle": "Butuh informasi lebih lanjut? Jangan ragu untuk menghubungi saya",

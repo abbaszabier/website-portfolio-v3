@@ -102,6 +102,27 @@
     "Submit": "Submit"
   },
 
+  "portfolioPage": {
+    "diyoPos": {
+      "Title": "DIYO POS",
+      "Type": "Real Project",
+      "Desc": "A point of sale application for restaurants and cafes built with React JS and Chakra UI."
+    },
+    "sktSurveyLink": {
+      "Title": "SKT Survey Link",
+      "Type": "Real Project",
+      "Desc": "A survey link application for SKT built with React JS and Tailwind CSS."
+    },
+    "chappy": {
+      "Title": "Chappy",
+      "Type": "Real Project",
+      "Desc": "An e-learning platform dashboard for students built with React JS and Tailwind CSS."
+    },
+    "Repository": "Repository",
+    "LiveSite": "Live Site",
+    "ProjectNotFound": "Project not found"
+  },
+
   "settings": {
     "DarkMode": "Dark Mode",
     "SelectLanguage": "Select Language"

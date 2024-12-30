@@ -87,6 +87,26 @@
     "DownloadResume": "이력서 다운로드"
   },
 
+  "portfolioPage": {
+    "diyoPos": {
+      "Title": "DIYO POS",
+      "Type": "실제 프로젝트",
+      "Desc": "React JS와 Chakra UI로 제작된 레스토랑과 카페를 위한 POS 애플리케이션입니다."
+    },
+    "sktSurveyLink": {
+      "Title": "SKT 설문조사 링크",
+      "Type": "실제 프로젝트",
+      "Desc": "React JS와 Tailwind CSS로 제작된 SKT 설문조사 링크 애플리케이션입니다."
+    },
+    "chappy": {
+      "Title": "Chappy",
+      "Type": "실제 프로젝트",
+      "Desc": "React JS와 Tailwind CSS로 제작된 학생용 e-러닝 플랫폼 대시보드입니다."
+    },
+    "Repository": "저장소",
+    "LiveSite": "데모",
+    "ProjectNotFound": "프로젝트를 찾을 수 없습니다"
+  },
   "contactPage": {
     "Title": "연락하기",
     "SubTitle": "더 많은 정보가 필요하신가요? 언제든지 연락주세요",

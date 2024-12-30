@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "motion/react";
 import { useParams, useNavigate } from "react-router-dom";
-import projectData from "@/lib/data";
+import useProjectData from "@/lib/data";
 import StackIcon from "tech-stack-icons";
 import ReactDOM from "react-dom";
 import { Github } from "@/components/icons";
@@ -24,24 +24,24 @@ interface Project {
   category: "react-js" | "next-js";
 }
 
-const projects: Project[] = projectData.map((project) => ({
-  ...project,
-  category: project.category as "react-js" | "next-js",
-  screenshots: project.screenshots,
-}));
-
 function DetailProject() {
   const { id } = useParams();
   const { t } = useTranslation();
   const navigate = useNavigate();
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
+  const projects: Project[] = useProjectData().map((project) => ({
+    ...project,
+    category: project.category as "react-js" | "next-js",
+    screenshots: project.screenshots,
+  }));
+
   const project = projects.find((project) => project.id === Number(id));
   if (!project?.id) {
     return (
       <div className="flex justify-center items-center">
         <h1 className="text-2xl text-[#051c29] dark:text-white">
-          Project not found
+          {t("portfolioPage.ProjectNotFound")}
         </h1>
       </div>
     );
@@ -128,7 +128,7 @@ function DetailProject() {
               onClick={() => window.open(project?.linkRepo, "_blank")}
             >
               <Github />
-              <span className="text-sm">Repository</span>
+              <span className="text-sm"> {t("portfolioPage.Repository")}</span>
             </div>
 
             <div
@@ -137,7 +137,7 @@ function DetailProject() {
               onClick={() => window.open(project?.linkWeb, "_blank")}
             >
               <Link size={18} />
-              <span className="text-sm">Live Site</span>
+              <span className="text-sm">{t("portfolioPage.LiveSite")}</span>
             </div>
           </div>
 
