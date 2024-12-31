@@ -3,6 +3,15 @@ import { initReactI18next } from "react-i18next";
 import translationEN from "../locales/en/translationEn.json";
 import translationKO from "../locales/ko/translationKO.json";
 import translationID from "../locales/id/translationID.json";
+import translationZh from "../locales/zh/translationZh.json";
+import translationEs from "../locales/es/translationEs.json";
+import translationFr from "../locales/fr/translationFr.json";
+import translationDe from "../locales/de/translationDe.json";
+import translationAr from "../locales/ar/translationAr.json";
+import translationPt from "../locales/pt/translationPt.json";
+import translationRu from "../locales/ru/translationRu.json";
+import translationJa from "../locales/ja/translationJa.json";
+import translationHi from "../locales/hi/translationHi.json";
 
 const storedSettings = localStorage.getItem("setting-storage");
 const selectedLanguage = storedSettings
@@ -18,6 +27,33 @@ const resources = {
   },
   id: {
     translation: translationID,
+  },
+  zh: {
+    translation: translationZh,
+  },
+  es: {
+    translation: translationEs,
+  },
+  fr: {
+    translation: translationFr,
+  },
+  de: {
+    translation: translationDe,
+  },
+  ar: {
+    translation: translationAr,
+  },
+  pt: {
+    translation: translationPt,
+  },
+  ru: {
+    translation: translationRu,
+  },
+  ja: {
+    translation: translationJa,
+  },
+  hi: {
+    translation: translationHi,
   },
 };
 
