@@ -18,6 +18,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { ScrollArea } from "@/components/ui/scroll-area";
 import { Switch } from "@/components/ui/switch";
 import i18n from "@/locales/i18n";
 import { useTranslation } from "react-i18next";
@@ -194,15 +195,20 @@ function MainLayout() {
                 value={selectedLanguage}
                 onValueChange={changeLanguage}
               >
-                <DropdownMenuRadioItem value="id">
-                  <span className="mr-2">🇲🇨</span> ID
-                </DropdownMenuRadioItem>
-                <DropdownMenuRadioItem value="en">
-                  <span className="mr-2">🇺🇸</span> EN
-                </DropdownMenuRadioItem>
-                <DropdownMenuRadioItem value="ko">
-                  <span className="mr-2">🇰🇷</span> KO
-                </DropdownMenuRadioItem>
+                <ScrollArea className="h-[110px] w-full rounded-md">
+                  <DropdownMenuRadioItem value="id">
+                    <span className="mr-2">🇲🇨</span> ID
+                  </DropdownMenuRadioItem>
+                  <DropdownMenuRadioItem value="en">
+                    <span className="mr-2">🇺🇸</span> EN
+                  </DropdownMenuRadioItem>
+                  <DropdownMenuRadioItem value="ko">
+                    <span className="mr-2">🇰🇷</span> KO
+                  </DropdownMenuRadioItem>
+                  <DropdownMenuRadioItem value="zh">
+                    <span className="mr-2">🇨🇳</span> ZH
+                  </DropdownMenuRadioItem>
+                </ScrollArea>
               </DropdownMenuRadioGroup>
             </DropdownMenuContent>
           </DropdownMenu>
