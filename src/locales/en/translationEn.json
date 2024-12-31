@@ -119,7 +119,7 @@
       "Desc": "An e-learning platform dashboard for students built with React JS and Tailwind CSS."
     },
     "goFlights": {
-      "Title": "GoFlights",
+      "Title": "GoFlight",
       "Type": "Personal Project",
       "Desc": "A flight booking application built with Next JS, Prisma, Supabase, and Tailwind CSS."
     },
