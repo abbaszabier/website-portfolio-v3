@@ -113,7 +113,13 @@
     },
     "Repository": "Repository",
     "LiveSite": "Demo",
-    "ProjectNotFound": "Proyek tidak ditemukan"
+    "ProjectNotFound": "Proyek tidak ditemukan",
+    "Title": "Portofolio Saya",
+    "SubTitle": "Temukan proyek-proyek saya",
+    "All": "Semua",
+    "ReactJS": "React JS",
+    "NextJS": "Next JS",
+    "ViewDetail": "Lihat Detail"
   },
   "contactPage": {
     "Title": "Hubungi Saya",
