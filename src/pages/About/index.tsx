@@ -9,6 +9,18 @@ import Education from "./components/education";
 
 function About() {
   const { t } = useTranslation();
+  const handleDownload = () => {
+    const fileUrl = "/CV-Abbas-Zabier-Mohammad-Update-31-Dec-2024.pdf";
+    const fileName = "CV-Abbas-Zabier-Mohammad-Update-31-Dec-2024.pdf";
+
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = fileName;
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <>
       <Helmet>
@@ -98,12 +110,7 @@ function About() {
       >
         <Button
           className="relative bg-[#051c29] text-white hover:bg-white hover:text-[#051c29] dark:bg-white dark:text-[#051c29] dark:hover:bg-[#051c29] dark:hover:text-white rounded-lg inline-block font-semibold xs:p-2 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 shadow"
-          onClick={() =>
-            window.open(
-              "/CV-Abbas-Zabier-Mohammad-Update-31-Dec-2024.pdf",
-              "_blank"
-            )
-          }
+          onClick={handleDownload}
         >
           {t("aboutPage.DownloadResume")}
         </Button>
