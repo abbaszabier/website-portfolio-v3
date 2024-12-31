@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import thumbnailDiyo from "../assets/thumbnailDiyo.webp";
 import thumbnailSKT from "../assets/thumbnailSKT.webp";
 import thumbnailChappy from "../assets/thumbnailChappy.webp";
+import thumbnailGoFlights from "../assets/thumbnailGoflights.webp";
 import diyo1 from "../image/diyo/ssDiyo1.webp";
 import diyo2 from "../image/diyo/ssDiyo2.webp";
 import diyo3 from "../image/diyo/ssDiyo3.webp";
@@ -110,57 +111,16 @@ const useProjectData = () => {
     },
     {
       id: 4,
-      title: "Portfolio Website",
-      type: "Personal Project",
-      isClient: null,
-      description:
-        "A responsive portfolio website created with React.js and Chakra UI.",
-      imageUrl: "https://via.placeholder.com/300x200",
-      category: "react-js",
-      techStack: ["Next JS", "React Query", "Tailwind CSS"],
-      linkRepo: "https://x.com/abzabier_",
-      linkWeb: "https://x.com/abzabier_",
-      screenshots: [
-        "https://via.placeholder.com/300x200",
-        "https://via.placeholder.com/300x200",
-        "https://via.placeholder.com/300x200",
-      ],
-    },
-    {
-      id: 5,
-      title: "Social Media App",
-      type: "Real Project",
-      isClient: "🇮🇩",
-      description:
-        "A social media application built with React.js and Firebase for backend services.",
-      imageUrl: "https://via.placeholder.com/300x200",
-      category: "react-js",
-      techStack: ["Next JS", "React Query", "Tailwind CSS"],
-      linkRepo: "https://x.com/abzabier_",
-      linkWeb: "https://x.com/abzabier_",
-      screenshots: [
-        "https://via.placeholder.com/300x200",
-        "https://via.placeholder.com/300x200",
-        "https://via.placeholder.com/300x200",
-      ],
-    },
-    {
-      id: 6,
-      title: "E-learning Platform",
-      type: "Personal Project",
-      isClient: null,
-      description:
-        "An online learning platform developed using Next JS and React Query for data fetching.",
-      imageUrl: "https://via.placeholder.com/300x200",
+      title: t("portfolioPage.goFlights.Title"),
+      type: t("portfolioPage.goFlights.Type"),
+      isClient: "🇰🇷",
+      description: t("portfolioPage.goFlights.Desc"),
+      imageUrl: thumbnailGoFlights,
       category: "next-js",
-      techStack: ["Next JS", "React Query", "Tailwind CSS"],
-      linkRepo: "https://x.com/abzabier_",
-      linkWeb: "https://x.com/abzabier_",
-      screenshots: [
-        "https://via.placeholder.com/300x200",
-        "https://via.placeholder.com/300x200",
-        "https://via.placeholder.com/300x200",
-      ],
+      techStack: ["Typescript", "Next JS", "Tailwind CSS"],
+      linkRepo: "https://gitlab.com/inkor-system/chappy",
+      linkWeb: "https://gitlab.com/inkor-system/chappy",
+      screenshots: [],
     },
   ];
 };

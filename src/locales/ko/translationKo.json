@@ -103,6 +103,11 @@
       "Type": "실제 프로젝트",
       "Desc": "React JS와 Tailwind CSS로 제작된 학생용 e-러닝 플랫폼 대시보드입니다."
     },
+    "goFlights": {
+      "Title": "GoFlights",
+      "Type": "개인 프로젝트",
+      "Desc": "Next JS, Prisma, Supabase, Tailwind CSS로 구축된 항공편 예약 애플리케이션입니다."
+    },
     "Repository": "저장소",
     "LiveSite": "데모",
     "ProjectNotFound": "프로젝트를 찾을 수 없습니다"

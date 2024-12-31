@@ -118,6 +118,11 @@
       "Type": "Real Project",
       "Desc": "An e-learning platform dashboard for students built with React JS and Tailwind CSS."
     },
+    "goFlights": {
+      "Title": "GoFlights",
+      "Type": "Personal Project",
+      "Desc": "A flight booking application built with Next JS, Prisma, Supabase, and Tailwind CSS."
+    },
     "Repository": "Repository",
     "LiveSite": "Live Site",
     "ProjectNotFound": "Project not found"
