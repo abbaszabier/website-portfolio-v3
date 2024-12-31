@@ -125,7 +125,13 @@
     },
     "Repository": "Repository",
     "LiveSite": "Live Site",
-    "ProjectNotFound": "Project not found"
+    "ProjectNotFound": "Project not found",
+    "Title": "My Portfolio",
+    "SubTitle": "Here are some selected projects I have worked on.",
+    "All": "All",
+    "ReactJS": "React JS",
+    "NextJS": "Next JS",
+    "ViewDetail": "View Detail"
   },
 
   "settings": {
