@@ -63,7 +63,7 @@ function Portfolio() {
                   className="w-full"
                   onClick={() => navigate(`/portfolio/${project.id}`)}
                 >
-                  View Details
+                  {t("portfolioPage.ViewDetail")}
                 </Button>
               </CardContent>
             </Card>
@@ -98,18 +98,22 @@ function Portfolio() {
       </div>
       <h1 className="text-[24px] text-center sm:text-[26px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[52px] font-normal text-gray-900 dark:text-gray-200 leading-snug">
         <span className="font-bold text-[#051c29] dark:text-white">
-          My Portfolio
+          {t("portfolioPage.Title")}
         </span>
       </h1>
       <p className="text-gray-500 text-center xs:leading-5 font-light dark:text-gray-400 xs:text-[12px] text-base">
-        Here are some selected projects I have worked on.
+        {t("portfolioPage.SubTitle")}
       </p>
       <div className="flex flex-col items-center mt-4 w-full">
         <Tabs defaultValue="all" className="flex flex-col w-full">
           <TabsList className="mb-4">
-            <TabsTrigger value="all">All</TabsTrigger>
-            <TabsTrigger value="react-js">React JS</TabsTrigger>
-            <TabsTrigger value="next-js">Next JS</TabsTrigger>
+            <TabsTrigger value="all">{t("portfolioPage.All")}</TabsTrigger>
+            <TabsTrigger value="react-js">
+              {t("portfolioPage.ReactJS")}
+            </TabsTrigger>
+            <TabsTrigger value="next-js">
+              {t("portfolioPage.NextJS")}
+            </TabsTrigger>
           </TabsList>
           <TabsContent value="all">{renderProjects("all")}</TabsContent>
           <TabsContent value="react-js">
