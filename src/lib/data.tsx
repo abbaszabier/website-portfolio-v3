@@ -33,6 +33,18 @@ import chappy12 from "../image/Chappy/ssChappy12.webp";
 import chappy13 from "../image/Chappy/ssChappy13.webp";
 import chappy14 from "../image/Chappy/ssChappy14.webp";
 import chappy15 from "../image/Chappy/ssChappy15.webp";
+import goFlights1 from "../image/GoFlight/ssGoFlight1.webp";
+import goFlights2 from "../image/GoFlight/ssGoFlight2.webp";
+import goFlights3 from "../image/GoFlight/ssGoFlight3.webp";
+import goFlights4 from "../image/GoFlight/ssGoFlight4.webp";
+import goFlights5 from "../image/GoFlight/ssGoFlight5.webp";
+import goFlights6 from "../image/GoFlight/ssGoFlight6.webp";
+import goFlights7 from "../image/GoFlight/ssGoFlight7.webp";
+import goFlights8 from "../image/GoFlight/ssGoFlight8.webp";
+import goFlights9 from "../image/GoFlight/ssGoFlight9.webp";
+import goFlights10 from "../image/GoFlight/ssGoFlight10.webp";
+import goFlights11 from "../image/GoFlight/ssGoFlight11.webp";
+import goFlights12 from "../image/GoFlight/ssGoFlight12.webp";
 
 const useProjectData = () => {
   const { t } = useTranslation();
@@ -120,7 +132,20 @@ const useProjectData = () => {
       techStack: ["Typescript", "Next JS", "Tailwind CSS"],
       linkRepo: "https://gitlab.com/inkor-system/chappy",
       linkWeb: "https://gitlab.com/inkor-system/chappy",
-      screenshots: [],
+      screenshots: [
+        goFlights1,
+        goFlights2,
+        goFlights3,
+        goFlights4,
+        goFlights5,
+        goFlights6,
+        goFlights7,
+        goFlights8,
+        goFlights9,
+        goFlights10,
+        goFlights11,
+        goFlights12,
+      ],
     },
   ];
 };
