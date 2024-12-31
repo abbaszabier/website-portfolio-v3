@@ -208,6 +208,30 @@ function MainLayout() {
                   <DropdownMenuRadioItem value="zh">
                     <span className="mr-2">🇨🇳</span> ZH
                   </DropdownMenuRadioItem>
+                  <DropdownMenuRadioItem value="es">
+                    <span className="mr-2">🇪🇸</span> ES
+                  </DropdownMenuRadioItem>
+                  <DropdownMenuRadioItem value="fr">
+                    <span className="mr-2">🇫🇷</span> FR
+                  </DropdownMenuRadioItem>
+                  <DropdownMenuRadioItem value="de">
+                    <span className="mr-2">🇩🇪</span> DE
+                  </DropdownMenuRadioItem>
+                  <DropdownMenuRadioItem value="ar">
+                    <span className="mr-2">🇸🇦</span> AR
+                  </DropdownMenuRadioItem>
+                  <DropdownMenuRadioItem value="pt">
+                    <span className="mr-2">🇵🇹</span> PT
+                  </DropdownMenuRadioItem>
+                  <DropdownMenuRadioItem value="ru">
+                    <span className="mr-2">🇷🇺</span> RU
+                  </DropdownMenuRadioItem>
+                  <DropdownMenuRadioItem value="ja">
+                    <span className="mr-2">🇯🇵</span> JA
+                  </DropdownMenuRadioItem>
+                  <DropdownMenuRadioItem value="hi">
+                    <span className="mr-2">🇮🇳</span> HI
+                  </DropdownMenuRadioItem>
                 </ScrollArea>
               </DropdownMenuRadioGroup>
             </DropdownMenuContent>
