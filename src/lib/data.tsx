@@ -130,8 +130,8 @@ const useProjectData = () => {
       imageUrl: thumbnailGoFlights,
       category: "next-js",
       techStack: ["Typescript", "Next JS", "Tailwind CSS"],
-      linkRepo: "https://gitlab.com/inkor-system/chappy",
-      linkWeb: "https://gitlab.com/inkor-system/chappy",
+      linkRepo: "https://github.com/abbaszabier/next-flight",
+      linkWeb: "https://github.com/abbaszabier/next-flight",
       screenshots: [
         goFlights1,
         goFlights2,
