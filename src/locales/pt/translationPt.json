@@ -1,0 +1,140 @@
+{
+  "tab": {
+    "PortfolioAbbas": "Portfólio Abbas",
+    "Home": "Início",
+    "About": "Sobre",
+    "Portfolio": "Portfólio",
+    "Contact": "Contato"
+  },
+
+  "nav": {
+    "Home": "Início",
+    "About": "Sobre",
+    "Portfolio": "Portfólio",
+    "Contact": "Contato"
+  },
+
+  "homePage": {
+    "HeadingLine1": "Olá!",
+    "HeadingLine2": "Eu sou Abbas,",
+    "HeadingLine3": "",
+    "HeadingLine4": "DESENVOLVEDOR FRONTEND",
+    "HeadingLine5": "Baseado em",
+    "HeadingLine6": "INDONÉSIA 🇮🇩",
+    "Desc": "Bem-vindo ao meu site 👋🏼. Alguém que adora gatos, codificação, design e café. Apaixonado por criar sites bonitos e responsivos.",
+    "ButtonHireMe": "Contrate-me",
+    "Github": "Github",
+    "Instagram": "Instagram",
+    "Linkedin": "Linkedin",
+    "Twitter": "Twitter",
+    "MessageDesc": "Mensagem será enviada via WhatsApp.",
+    "Message": "Mensagem: ",
+    "TypeYourName": "Digite seu nome",
+    "TypeYourCountry": "Digite seu país",
+    "YourName": "(Seu Nome)",
+    "YourCountry": "(Seu País)",
+    "Send": "Enviar"
+  },
+
+  "aboutPage": {
+    "Title": "Sobre Mim",
+    "SubTitle": "Descubra quem eu sou",
+    "Desc": "Sou um Desenvolvedor Web Frontend com mais de três anos de experiência. Tenho paixão por criar aplicativos web responsivos, interativos e centrados no usuário usando tecnologias modernas como React JS ou Next JS. Tenho experiência em colaborar de forma eficaz com design UI/UX e desenvolvedores backend para oferecer uma experiência de usuário de alta qualidade. Além disso, participo de projetos pessoais e acompanho as tendências mais recentes da indústria para melhorar minhas habilidades e contribuir com soluções inovadoras.",
+    "JavaScript": "JavaScript",
+    "DescJavaScript": "Linguagem de Programação",
+    "TypeScript": "TypeScript",
+    "DescTypeScript": "Linguagem de Programação",
+    "ReactJS": "React JS",
+    "DescReactJS": "Biblioteca JavaScript",
+    "NextJS": "Next JS",
+    "DescNextJS": "Framework React",
+    "ReactQuery": "React Query",
+    "DescReactQuery": "Busca de Dados",
+    "Zustand": "Zustand",
+    "DescZustand": "Gerenciamento de Estado",
+    "TailwindCSS": "Tailwind CSS",
+    "DescTailwindCSS": "Framework CSS",
+    "Bootstrap": "Bootstrap",
+    "DescBootstrap": "Framework CSS",
+    "ChakraUI": "Chakra UI",
+    "DescChakraUI": "Biblioteca de Componentes",
+    "Education": "Educação",
+    "IPBUniversity": "Universidade IPB",
+    "DescIPBUniversity": "Bacharel, Ciência da Computação",
+    "September": "Set",
+    "2018": "2018",
+    "April": "Abr",
+    "2023": "2023",
+    "WorkExperience": "Experiência Profissional",
+    "Inkor": "Inkor",
+    "Fulltime": "Período Integral",
+    "Present": "Presente",
+    "FrontendDeveloper": "Desenvolvedor Frontend",
+    "SountJakarta": "Sul de Jacarta",
+    "Medan": "Medan",
+    "Remote": "Remoto",
+    "August": "Ago",
+    "March": "Mar",
+    "2024": "2024",
+    "Dealjava": "Dealjava",
+    "1Yr5mos": "1 ano e 5 meses",
+    "DSITDIPB": "DSITD IPB",
+    "Internship": "Estágio",
+    "9mos": "9 meses",
+    "Bogor": "Bogor",
+    "January": "Jan",
+    "3mos": "3 meses",
+    "July": "Jul",
+    "2022": "2022",
+    "6mos": "6 meses",
+    "DownloadResume": "Baixar Currículo"
+  },
+
+  "portfolioPage": {
+    "diyoPos": {
+      "Title": "DIYO POS",
+      "Type": "Projeto Real",
+      "Desc": "Aplicativo de ponto de venda para restaurantes e cafés construído com React JS e Chakra UI."
+    },
+    "sktSurveyLink": {
+      "Title": "SKT Survey Link",
+      "Type": "Projeto Real",
+      "Desc": "Aplicativo de link de pesquisa para SKT construído com React JS e Tailwind CSS."
+    },
+    "chappy": {
+      "Title": "Chappy",
+      "Type": "Projeto Real",
+      "Desc": "Painel de plataforma de e-learning para alunos construído com React JS e Tailwind CSS."
+    },
+    "goFlights": {
+      "Title": "GoFlight",
+      "Type": "Projeto Pessoal",
+      "Desc": "Aplicativo de reserva de passagens aéreas construído com Next JS, Prisma, Supabase e Tailwind CSS."
+    },
+    "Repository": "Repositório",
+    "LiveSite": "Demo",
+    "ProjectNotFound": "Projeto não encontrado",
+    "Title": "Meu Portfólio",
+    "SubTitle": "Descubra meus projetos",
+    "All": "Todos",
+    "ReactJS": "React JS",
+    "NextJS": "Next JS",
+    "ViewDetail": "Ver Detalhes"
+  },
+  "contactPage": {
+    "Title": "Entre em Contato",
+    "SubTitle": "Precisa de mais informações? Não hesite em me contatar",
+    "Name": "Nome",
+    "YourName": "Seu Nome",
+    "Email": "E-mail",
+    "YourEmail": "Seu E-mail",
+    "Message": "Mensagem",
+    "YourMessage": "Sua Mensagem",
+    "Submit": "Enviar"
+  },
+
+  "settings": {
+    "DarkMode": "Modo Escuro",
+    "SelectLanguage": "Selecionar Idioma"
+  }
+}

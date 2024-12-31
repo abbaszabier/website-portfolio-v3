@@ -1,0 +1,140 @@
+{
+  "tab": {
+    "PortfolioAbbas": "Portfolio Abbas",
+    "Home": "Startseite",
+    "About": "Über mich",
+    "Portfolio": "Portfolio",
+    "Contact": "Kontakt"
+  },
+
+  "nav": {
+    "Home": "Startseite",
+    "About": "Zirka",
+    "Portfolio": "Portfolio",
+    "Contact": "Kontakt"
+  },
+
+  "homePage": {
+    "HeadingLine1": "Hallo!",
+    "HeadingLine2": "Ich bin Abbas,",
+    "HeadingLine3": "",
+    "HeadingLine4": "FRONTEND-ENTWICKLER",
+    "HeadingLine5": "Ansässig in",
+    "HeadingLine6": "INDONESIEN 🇮🇩",
+    "Desc": "Willkommen auf meiner Website 👋🏼. Eine Person, die Katzen, Programmierung, Design und Kaffee liebt. Leidenschaftlich daran interessiert, schöne und responsive Websites zu erstellen.",
+    "ButtonHireMe": "Einstellen",
+    "Github": "Github",
+    "Instagram": "Instagram",
+    "Linkedin": "LinkedIn",
+    "Twitter": "Twitter",
+    "MessageDesc": "Nachricht wird an WhatsApp gesendet.",
+    "Message": "Nachricht: ",
+    "TypeYourName": "Geben Sie Ihren Namen ein",
+    "TypeYourCountry": "Geben Sie Ihr Land ein",
+    "YourName": "(Ihr Name)",
+    "YourCountry": "(Ihr Land)",
+    "Send": "Senden"
+  },
+
+  "aboutPage": {
+    "Title": "Über mich",
+    "SubTitle": "Erfahren Sie, wer ich bin",
+    "Desc": "Ich bin ein Frontend-Webentwickler mit über drei Jahren Erfahrung. Ich habe eine Leidenschaft für die Erstellung von responsiven, interaktiven und benutzerorientierten Webanwendungen mit modernen Technologien wie React JS oder Next JS. Ich habe Erfahrung in der effektiven Zusammenarbeit mit UI/UX-Designern und Backend-Entwicklern, um qualitativ hochwertige Benutzererlebnisse zu liefern. Darüber hinaus bin ich aktiv in persönlichen Projekten und halte mich über die neuesten Branchentrends auf dem Laufenden, um meine Fähigkeiten zu verbessern und zu innovativen Lösungen beizutragen.",
+    "JavaScript": "JavaScript",
+    "DescJavaScript": "Programmiersprache",
+    "TypeScript": "TypeScript",
+    "DescTypeScript": "Programmiersprache",
+    "ReactJS": "React JS",
+    "DescReactJS": "JavaScript-Bibliothek",
+    "NextJS": "Next JS",
+    "DescNextJS": "React-Framework",
+    "ReactQuery": "React Query",
+    "DescReactQuery": "Datenabruf",
+    "Zustand": "Zustand",
+    "DescZustand": "State-Management",
+    "TailwindCSS": "Tailwind CSS",
+    "DescTailwindCSS": "CSS-Framework",
+    "Bootstrap": "Bootstrap",
+    "DescBootstrap": "CSS-Framework",
+    "ChakraUI": "Chakra UI",
+    "DescChakraUI": "Komponentenbibliothek",
+    "Education": "Bildung",
+    "IPBUniversity": "IPB Universität",
+    "DescIPBUniversity": "Bachelor, Informatik",
+    "September": "Sep",
+    "2018": "2018",
+    "April": "Apr",
+    "2023": "2023",
+    "WorkExperience": "Berufserfahrung",
+    "Inkor": "Inkor",
+    "Fulltime": "Vollzeit",
+    "Present": "Aktuell",
+    "FrontendDeveloper": "Frontend-Entwickler",
+    "SountJakarta": "Süd-Jakarta",
+    "Medan": "Medan",
+    "Remote": "Remote",
+    "August": "Aug",
+    "March": "Mär",
+    "2024": "2024",
+    "Dealjava": "Dealjava",
+    "1Yr5mos": "1 Jahr 5 Monate",
+    "DSITDIPB": "DSITD IPB",
+    "Internship": "Praktikum",
+    "9mos": "9 Monate",
+    "Bogor": "Bogor",
+    "January": "Jan",
+    "3mos": "3 Monate",
+    "July": "Jul",
+    "2022": "2022",
+    "6mos": "6 Monate",
+    "DownloadResume": "Lebenslauf herunterladen"
+  },
+
+  "portfolioPage": {
+    "diyoPos": {
+      "Title": "DIYO POS",
+      "Type": "Reales Projekt",
+      "Desc": "Point-of-Sale-Anwendung für Restaurants und Cafés, entwickelt mit React JS und Chakra UI."
+    },
+    "sktSurveyLink": {
+      "Title": "SKT Survey Link",
+      "Type": "Reales Projekt",
+      "Desc": "Umfrage-Link-Anwendung für SKT, entwickelt mit React JS und Tailwind CSS."
+    },
+    "chappy": {
+      "Title": "Chappy",
+      "Type": "Reales Projekt",
+      "Desc": "Dashboard für eine E-Learning-Plattform für Schüler, entwickelt mit React JS und Tailwind CSS."
+    },
+    "goFlights": {
+      "Title": "GoFlight",
+      "Type": "Persönliches Projekt",
+      "Desc": "Flugbuchungsanwendung, entwickelt mit Next JS, Prisma, Supabase und Tailwind CSS."
+    },
+    "Repository": "Repository",
+    "LiveSite": "Demo",
+    "ProjectNotFound": "Projekt nicht gefunden",
+    "Title": "Mein Portfolio",
+    "SubTitle": "Entdecken Sie meine Projekte",
+    "All": "Alle",
+    "ReactJS": "React JS",
+    "NextJS": "Next JS",
+    "ViewDetail": "Details anzeigen"
+  },
+  "contactPage": {
+    "Title": "Kontaktieren Sie mich",
+    "SubTitle": "Brauchen Sie weitere Informationen? Kontaktieren Sie mich gerne",
+    "Name": "Name",
+    "YourName": "Ihr Name",
+    "Email": "E-Mail",
+    "YourEmail": "Ihre E-Mail",
+    "Message": "Nachricht",
+    "YourMessage": "Ihre Nachricht",
+    "Submit": "Absenden"
+  },
+
+  "settings": {
+    "DarkMode": "Dunkelmodus",
+    "SelectLanguage": "Sprache auswählen"
+  }
+}

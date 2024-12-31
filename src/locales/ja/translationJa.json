@@ -1,0 +1,140 @@
+{
+  "tab": {
+    "PortfolioAbbas": "アッバスのポートフォリオ",
+    "Home": "ホーム",
+    "About": "自己紹介",
+    "Portfolio": "私の仕事",
+    "Contact": "コンタクト"
+  },
+
+  "nav": {
+    "Home": "ホーム",
+    "About": "約",
+    "Portfolio": "仕事",
+    "Contact": "接触"
+  },
+
+  "homePage": {
+    "HeadingLine1": "こんにちは！",
+    "HeadingLine2": "私はアッバス、",
+    "HeadingLine3": "",
+    "HeadingLine4": "フロントエンドデベロッパー",
+    "HeadingLine5": "居住地",
+    "HeadingLine6": "インドネシア 🇮🇩",
+    "Desc": "私のサイトへようこそ 👋🏼。猫、コーディング、デザイン、コーヒーが大好きな人です。美しく、レスポンシブなウェブサイトを作ることに情熱を持っています。",
+    "ButtonHireMe": "採用する",
+    "Github": "Github",
+    "Instagram": "Instagram",
+    "Linkedin": "Linkedin",
+    "Twitter": "Twitter",
+    "MessageDesc": "メッセージはWhatsAppに送信されます。",
+    "Message": "メッセージ: ",
+    "TypeYourName": "名前を入力してください",
+    "TypeYourCountry": "国名を入力してください",
+    "YourName": "(あなたの名前)",
+    "YourCountry": "(あなたの国)",
+    "Send": "送信"
+  },
+
+  "aboutPage": {
+    "Title": "自己紹介",
+    "SubTitle": "私を知ってください",
+    "Desc": "私はフロントエンドウェブデベロッパーで、3年以上の経験があります。React JSやNext JSなどの最新技術を使用して、レスポンシブでインタラクティブなユーザー中心のウェブアプリケーションを作成することに情熱を持っています。UI/UXデザインとバックエンド開発者と効果的に協力し、高品質なユーザー体験を提供しています。さらに、個人的なプロジェクトにも積極的に取り組み、業界の最新トレンドを追い続けています。",
+    "JavaScript": "JavaScript",
+    "DescJavaScript": "プログラミング言語",
+    "TypeScript": "TypeScript",
+    "DescTypeScript": "プログラミング言語",
+    "ReactJS": "React JS",
+    "DescReactJS": "JavaScriptライブラリ",
+    "NextJS": "Next JS",
+    "DescNextJS": "Reactフレームワーク",
+    "ReactQuery": "React Query",
+    "DescReactQuery": "データ取得",
+    "Zustand": "Zustand",
+    "DescZustand": "ステート管理",
+    "TailwindCSS": "Tailwind CSS",
+    "DescTailwindCSS": "CSSフレームワーク",
+    "Bootstrap": "Bootstrap",
+    "DescBootstrap": "CSSフレームワーク",
+    "ChakraUI": "Chakra UI",
+    "DescChakraUI": "コンポーネントライブラリ",
+    "Education": "学歴",
+    "IPBUniversity": "IPB大学",
+    "DescIPBUniversity": "学士、コンピュータサイエンス",
+    "September": "9月",
+    "2018": "2018年",
+    "April": "4月",
+    "2023": "2023年",
+    "WorkExperience": "職務経験",
+    "Inkor": "Inkor",
+    "Fulltime": "フルタイム",
+    "Present": "現在",
+    "FrontendDeveloper": "フロントエンドデベロッパー",
+    "SountJakarta": "南ジャカルタ",
+    "Medan": "メダン",
+    "Remote": "リモート",
+    "August": "8月",
+    "March": "3月",
+    "2024": "2024年",
+    "Dealjava": "Dealjava",
+    "1Yr5mos": "1年5ヶ月",
+    "DSITDIPB": "DSITD IPB",
+    "Internship": "インターンシップ",
+    "9mos": "9ヶ月",
+    "Bogor": "ボゴール",
+    "January": "1月",
+    "3mos": "3ヶ月",
+    "July": "7月",
+    "2022": "2022年",
+    "6mos": "6ヶ月",
+    "DownloadResume": "履歴書をダウンロード"
+  },
+
+  "portfolioPage": {
+    "diyoPos": {
+      "Title": "DIYO POS",
+      "Type": "実際のプロジェクト",
+      "Desc": "React JSとChakra UIを使用して構築されたレストランとカフェ向けのPOSアプリケーション。"
+    },
+    "sktSurveyLink": {
+      "Title": "SKT Survey Link",
+      "Type": "実際のプロジェクト",
+      "Desc": "React JSとTailwind CSSを使用して構築されたSKT調査用リンクアプリケーション。"
+    },
+    "chappy": {
+      "Title": "Chappy",
+      "Type": "実際のプロジェクト",
+      "Desc": "React JSとTailwind CSSを使用して構築された学生向けのe-learningプラットフォームダッシュボード。"
+    },
+    "goFlights": {
+      "Title": "GoFlight",
+      "Type": "個人プロジェクト",
+      "Desc": "Next JS、Prisma、Supabase、Tailwind CSSを使用して構築された航空券予約アプリケーション。"
+    },
+    "Repository": "リポジトリ",
+    "LiveSite": "デモ",
+    "ProjectNotFound": "プロジェクトが見つかりません",
+    "Title": "私のポートフォリオ",
+    "SubTitle": "私のプロジェクトを見てください",
+    "All": "すべて",
+    "ReactJS": "React JS",
+    "NextJS": "Next JS",
+    "ViewDetail": "詳細を見る"
+  },
+  "contactPage": {
+    "Title": "お問い合わせ",
+    "SubTitle": "もっと情報が必要ですか？お気軽にご連絡ください",
+    "Name": "名前",
+    "YourName": "あなたの名前",
+    "Email": "メール",
+    "YourEmail": "あなたのメール",
+    "Message": "メッセージ",
+    "YourMessage": "あなたのメッセージ",
+    "Submit": "送信"
+  },
+
+  "settings": {
+    "DarkMode": "ダークモード",
+    "SelectLanguage": "言語を選択"
+  }
+}

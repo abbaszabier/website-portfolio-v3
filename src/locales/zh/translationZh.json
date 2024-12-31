@@ -1,0 +1,141 @@
+{
+  "tab": {
+    "PortfolioAbbas": "阿巴斯的作品集",
+    "Home": "主页",
+    "About": "关于",
+    "Portfolio": "作品集",
+    "Contact": "联系"
+  },
+
+  "nav": {
+    "Home": "主页",
+    "About": "关于",
+    "Portfolio": "作品集",
+    "Contact": "联系"
+  },
+
+  "homePage": {
+    "HeadingLine1": "你好！",
+    "HeadingLine2": "我是阿巴斯,",
+    "HeadingLine3": "一名",
+    "HeadingLine4": "前端开发者",
+    "HeadingLine5": "来自",
+    "HeadingLine6": "印度尼西亚 🇮🇩",
+    "Desc": "欢迎访问我的个人网站 👋🏼。我热爱猫咪、编程、设计和咖啡。我对创建美观且响应迅速的网站充满热情。",
+    "ButtonHireMe": "雇佣我",
+    "Github": "Github",
+    "Instagram": "Instagram",
+    "Linkedin": "Linkedin",
+    "Twitter": "Twitter",
+    "MessageDesc": "消息将发送到 WhatsApp。",
+    "Message": "消息：",
+    "TypeYourName": "输入您的姓名",
+    "TypeYourCountry": "输入您的国家",
+    "YourName": "（您的姓名）",
+    "YourCountry": "（您的国家）",
+    "Send": "发送"
+  },
+
+  "aboutPage": {
+    "Title": "关于我",
+    "SubTitle": "了解我的更多信息",
+    "Desc": "我是一名拥有超过三年专业经验的前端开发者。我专注于使用现代技术（如 React JS 或 Next JS）创建响应式、交互式、以用户为中心的网络应用程序。我与 UI/UX 设计师和后端开发人员有效合作，交付流畅且高质量的用户体验。我热衷于持续学习，积极参与个人项目，并紧跟行业趋势以提升技能并贡献创新解决方案。",
+    "JavaScript": "JavaScript",
+    "DescJavaScript": "编程语言",
+    "TypeScript": "TypeScript",
+    "DescTypeScript": "编程语言",
+    "ReactJS": "React JS",
+    "DescReactJS": "JavaScript 库",
+    "NextJS": "Next JS",
+    "DescNextJS": "React 框架",
+    "ReactQuery": "React Query",
+    "DescReactQuery": "数据获取",
+    "Zustand": "Zustand",
+    "DescZustand": "状态管理",
+    "TailwindCSS": "Tailwind CSS",
+    "DescTailwindCSS": "CSS 框架",
+    "Bootstrap": "Bootstrap",
+    "DescBootstrap": "CSS 框架",
+    "ChakraUI": "Chakra UI",
+    "DescChakraUI": "组件库",
+    "Education": "教育背景",
+    "IPBUniversity": "IPB 大学",
+    "DescIPBUniversity": "学士学位，计算机科学",
+    "September": "九月",
+    "2018": "2018",
+    "April": "四月",
+    "2023": "2023",
+    "WorkExperience": "工作经验",
+    "Inkor": "Inkor",
+    "Fulltime": "全职",
+    "Present": "现在",
+    "FrontendDeveloper": "前端开发者",
+    "SountJakarta": "南雅加达",
+    "Medan": "棉兰",
+    "Remote": "远程",
+    "August": "八月",
+    "March": "三月",
+    "2024": "2024",
+    "Dealjava": "Dealjava",
+    "1Yr5mos": "1年5个月",
+    "DSITDIPB": "DSITD IPB",
+    "Internship": "实习",
+    "9mos": "9个月",
+    "Bogor": "茂物",
+    "January": "一月",
+    "3mos": "3个月",
+    "July": "七月",
+    "2022": "2022",
+    "6mos": "6个月",
+    "DownloadResume": "下载简历"
+  },
+
+  "contactPage": {
+    "Title": "联系我",
+    "SubTitle": "需要更多信息？请随时联系我",
+    "Name": "姓名",
+    "YourName": "您的姓名",
+    "Email": "电子邮件",
+    "YourEmail": "您的电子邮件",
+    "Message": "消息",
+    "YourMessage": "您的消息",
+    "Submit": "提交"
+  },
+
+  "portfolioPage": {
+    "diyoPos": {
+      "Title": "DIYO POS",
+      "Type": "实际项目",
+      "Desc": "一款使用 React JS 和 Chakra UI 构建的餐厅和咖啡馆销售点应用程序。"
+    },
+    "sktSurveyLink": {
+      "Title": "SKT Survey Link",
+      "Type": "实际项目",
+      "Desc": "一款使用 React JS 和 Tailwind CSS 构建的 SKT 调查链接应用程序。"
+    },
+    "chappy": {
+      "Title": "Chappy",
+      "Type": "实际项目",
+      "Desc": "一款为学生构建的 e-learning 平台仪表板，使用 React JS 和 Tailwind CSS。"
+    },
+    "goFlights": {
+      "Title": "GoFlight",
+      "Type": "个人项目",
+      "Desc": "一款使用 Next JS、Prisma、Supabase 和 Tailwind CSS 构建的航班预订应用程序。"
+    },
+    "Repository": "代码库",
+    "LiveSite": "在线演示",
+    "ProjectNotFound": "未找到项目",
+    "Title": "我的作品集",
+    "SubTitle": "发现我的项目",
+    "All": "全部",
+    "ReactJS": "React JS",
+    "NextJS": "Next JS",
+    "ViewDetail": "查看详情"
+  },
+
+  "settings": {
+    "DarkMode": "暗模式",
+    "SelectLanguage": "选择语言"
+  }
+}
