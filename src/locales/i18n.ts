@@ -1,8 +1,8 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import translationEN from "../locales/en/translationEn.json";
-import translationKO from "../locales/ko/translationKO.json";
-import translationID from "../locales/id/translationID.json";
+import translationKO from "../locales/ko/translationKo.json";
+import translationID from "../locales/id/translationId.json";
 import translationZh from "../locales/zh/translationZh.json";
 import translationEs from "../locales/es/translationEs.json";
 import translationFr from "../locales/fr/translationFr.json";
