@@ -125,7 +125,7 @@ const useProjectData = () => {
       id: 4,
       title: t("portfolioPage.goFlights.Title"),
       type: t("portfolioPage.goFlights.Type"),
-      isClient: "🇰🇷",
+      isClient: null,
       description: t("portfolioPage.goFlights.Desc"),
       imageUrl: thumbnailGoFlights,
       category: "next-js",

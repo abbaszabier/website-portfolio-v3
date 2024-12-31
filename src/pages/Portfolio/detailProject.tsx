@@ -118,7 +118,8 @@ function DetailProject() {
             <div className="flex items-center gap-1 text-[#051c29] dark:text-white">
               <Briefcase size={18} />
               <span className="text-sm">
-                {project?.type} ({project?.isClient})
+                {project?.type}{" "}
+                {project?.isClient ? `(${project?.isClient})` : ""}
               </span>
             </div>
 
