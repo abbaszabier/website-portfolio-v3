@@ -4,11 +4,10 @@ import { useTranslation } from "react-i18next";
 import { motion } from "motion/react";
 import { useParams, useNavigate } from "react-router-dom";
 import useProjectData from "@/lib/data";
-import StackIcon from "tech-stack-icons";
 import ReactDOM from "react-dom";
 import { Github } from "@/components/icons";
 import { ArrowCircleLeft, Briefcase, CloseCircle, Link } from "iconsax-react";
-import Zustand from "@/assets/Zustand.svg";
+import RenderTechIcon from "@/utils/renderTechIcon";
 
 interface Project {
   id: number;
@@ -46,38 +45,6 @@ function DetailProject() {
       </div>
     );
   }
-
-  const renderTechIcon = (tech: unknown) => {
-    switch (tech) {
-      case "React JS":
-        return <StackIcon name="reactjs" className="h-6 w-6" />;
-      case "Next JS":
-        return <StackIcon name="nextjs2" className="h-6 w-6" />;
-      case "Tailwind CSS":
-        return <StackIcon name="tailwindcss" className="h-6 w-6" />;
-      case "React Query":
-        return <StackIcon name="reactquery" className="h-6 w-6" />;
-      case "Chakra UI":
-        return <StackIcon name="chakraui" className="h-6 w-6" />;
-      case "Typescript":
-        return <StackIcon name="typescript" className="h-6 w-6" />;
-      case "Javascript":
-        return <StackIcon name="javascript" className="h-6 w-6" />;
-      case "Zustand":
-        return (
-          <img
-            loading="lazy"
-            src={Zustand}
-            alt={t("aboutPage.Zustand")}
-            className="h-6 w-6"
-          />
-        );
-      case "GraphQL":
-        return <StackIcon name="graphql" className="h-6 w-6" />;
-      default:
-        return null;
-    }
-  };
 
   return (
     <>
@@ -149,7 +116,7 @@ function DetailProject() {
                 className="flex items-center cursor-pointer"
                 title={tech === "React JS" ? "React JS" : tech}
               >
-                {renderTechIcon(tech)}
+                {RenderTechIcon({ tech })}
               </div>
             ))}
           </div>

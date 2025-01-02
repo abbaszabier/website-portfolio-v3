@@ -64,6 +64,7 @@ const useProjectData = () => {
         "React Query",
         "Zustand",
         "GraphQL",
+        "Postman",
       ],
       linkRepo: "https://gitlab.com/",
       linkWeb: "https://pos.diyo.app/",
@@ -129,7 +130,13 @@ const useProjectData = () => {
       description: t("portfolioPage.goFlights.Desc"),
       imageUrl: thumbnailGoFlights,
       category: "next-js",
-      techStack: ["Typescript", "Next JS", "Tailwind CSS"],
+      techStack: [
+        "Typescript",
+        "Next JS",
+        "Tailwind CSS",
+        "Supabase",
+        "Prisma",
+      ],
       linkRepo: "https://github.com/abbaszabier/next-flight",
       linkWeb: "https://github.com/abbaszabier/next-flight",
       screenshots: [
