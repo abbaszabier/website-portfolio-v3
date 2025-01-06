@@ -36,14 +36,18 @@ function About() {
         transition={{ duration: 1 }}
         className="mb-4"
       >
-        <div className="block text-center">
-          <img
+        <div className="mx-auto w-20 rounded-full shadow bg-white dark:bg-[#051c29]">
+          <motion.img
             src={ProfileLogo}
             alt="Avatar"
             loading="eager"
             width="80"
             height="80"
-            className="w-20 mx-auto rounded-full shadow bg-white dark:bg-[#051c29] p-2"
+            className="p-2"
+            whileHover={{ scale: 1.1 }}
+            initial={{ opacity: 0, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeIn" }}
           />
         </div>
         <div className="flex w-full flex-col order-2 md:order-1 text-center">
