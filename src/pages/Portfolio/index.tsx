@@ -86,14 +86,18 @@ function Portfolio() {
           {t("tab.PortfolioAbbas")} - {t("tab.Portfolio")}
         </title>
       </Helmet>
-      <div className="block text-center">
-        <img
+      <div className="mx-auto w-20 rounded-full shadow bg-white dark:bg-[#051c29]">
+        <motion.img
           src={ProfileLogo}
           alt="Avatar"
           loading="eager"
           width="80"
           height="80"
-          className="w-20 mx-auto rounded-full shadow bg-white dark:bg-[#051c29] p-2"
+          className="p-2"
+          whileHover={{ scale: 1.1 }}
+          initial={{ opacity: 0, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeIn" }}
         />
       </div>
       <h1 className="text-[24px] text-center sm:text-[26px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[52px] font-normal text-gray-900 dark:text-gray-200 leading-snug">
