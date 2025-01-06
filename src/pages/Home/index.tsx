@@ -47,18 +47,21 @@ function Home() {
         className="flex flex-col md:flex-row sm:justify-between xs:justify-center items-center h-[calc(100vh-10rem)] sm:px-12 xs:px-6 xs:pb-6"
       >
         <div className="relative flex md:w-1/3 justify-center rounded-full shadow-lg bg-white dark:bg-[#051c29] items-center order-1 md:order-2 xs:mb-4">
-          <img
+          <motion.img
             src={Profile}
             alt="Avatar"
             loading="eager"
             decoding="async"
             width="384"
             height="384"
-            className="w-60 xs:w-48 md:w-72 lg:w-80 xl:w-96 2xl:w-auto hover:scale-110"
+            className="w-60 xs:w-48 md:w-72 lg:w-80 xl:w-96 2xl:w-auto"
             style={{
               background: "transparent",
-              animation: "placeholder 1.2s ease-in-out infinite",
             }}
+            whileHover={{ scale: 1.1 }}
+            initial={{ opacity: 0, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.5, ease: "easeIn" }}
           />
         </div>
         <div className="flex w-full md:w-1/2 flex-col gap-4 order-2 md:order-1">
