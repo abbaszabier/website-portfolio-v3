@@ -11,7 +11,7 @@ function About() {
   const { t } = useTranslation();
   const handleDownload = () => {
     const fileUrl = "/CV-Abbas-Zabier-Mohammad-Update-1-Jan-2025.pdf";
-    const fileName = "CV-Abbas-Zabier-Mohammad-Update-1-Jan-2025.pdf";
+    const fileName = "CV Abbas Zabier Mohammad - Update 1 Jan 2025.pdf";
 
     const link = document.createElement("a");
     link.href = fileUrl;
