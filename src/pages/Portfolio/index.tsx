@@ -55,7 +55,7 @@ function Portfolio() {
                 <CardTitle>{project.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">
+                <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 line-clamp-2">
                   {project.description}
                 </p>
                 <Button
