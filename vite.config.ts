@@ -14,10 +14,10 @@ export default defineConfig({
         enabled: true,
       },
       manifest: {
-        name: "Portfolio Abbas",
-        short_name: "Portfolio Abbas",
+        name: "Abbas Zabier",
+        short_name: "Abbas",
         description:
-          "Portfolio untuk menampilkan project yang telah saya kerjakan",
+          "Abbas Zabier Mohammad is a Frontend Developer based in Indonesia. He is passionate about creating beautiful and responsive websites.",
         theme_color: "#ffffff",
         icons: [
           {
