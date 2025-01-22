@@ -1,8 +1,7 @@
 {
   "name": "Portfolio Abbas",
   "short_name": "Portfolio Abbas",
-  "description": "Portfolio untuk menampilkan project yang telah saya kerjakan",
-
+  "description": "Abbas Zabier Mohammad is a Frontend Developer based in Indonesia. He is passionate about creating beautiful and responsive websites.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
