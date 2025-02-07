@@ -111,6 +111,11 @@
       "Type": "Proyek Pribadi",
       "Desc": "Aplikasi pemesanan tiket pesawat yang dibangun dengan Next JS, Prisma, Supabase, dan Tailwind CSS."
     },
+    "quranKu": {
+      "Title": "QuranKu",
+      "Type": "Proyek Pribadi",
+      "Desc": "Aplikasi Al-Qur'an digital yang dibangun dengan Next JS, Tailwind CSS"
+    },
     "Repository": "Repository",
     "LiveSite": "Demo",
     "ProjectNotFound": "Proyek tidak ditemukan",

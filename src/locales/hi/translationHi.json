@@ -111,6 +111,11 @@
       "Type": "व्यक्तिगत परियोजना",
       "Desc": "Next JS, Prisma, Supabase और Tailwind CSS का उपयोग करके एक फ्लाइट टिकट बुकिंग एप्लिकेशन।"
     },
+    "quranKu": {
+      "Title": "QuranKu",
+      "Type": "व्यक्तिगत परियोजना",
+      "Desc": "Next JS और Tailwind CSS का उपयोग करके एक ऑनलाइन कुरान रीडिंग एप्लिकेशन।"
+    },
     "Repository": "रेपो",
     "LiveSite": "डेमो",
     "ProjectNotFound": "परियोजना नहीं मिली",

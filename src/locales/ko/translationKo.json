@@ -108,6 +108,11 @@
       "Type": "개인 프로젝트",
       "Desc": "Next JS, Prisma, Supabase, Tailwind CSS로 구축된 항공편 예약 애플리케이션입니다."
     },
+    "quranKu": {
+      "Title": "QuranKu",
+      "Type": "개인 프로젝트",
+      "Desc": "Next JS와 Tailwind CSS로 제작된 온라인 코란 읽기 애플리케이션입니다."
+    },
     "Repository": "저장소",
     "LiveSite": "데모",
     "ProjectNotFound": "프로젝트를 찾을 수 없습니다",

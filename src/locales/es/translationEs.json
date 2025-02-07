@@ -123,6 +123,11 @@
       "Type": "Proyecto Personal",
       "Desc": "Una aplicación de reserva de vuelos construida con Next JS, Prisma, Supabase y Tailwind CSS."
     },
+    "quranKu": {
+      "Title": "QuranKu",
+      "Type": "Proyecto Personal",
+      "Desc": "Una aplicación del Corán construida con Next JS y Tailwind CSS."
+    },
     "Repository": "Repositorio",
     "LiveSite": "Sitio en Vivo",
     "ProjectNotFound": "Proyecto no encontrado",

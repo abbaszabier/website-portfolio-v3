@@ -123,6 +123,11 @@
       "Type": "个人项目",
       "Desc": "一款使用 Next JS、Prisma、Supabase 和 Tailwind CSS 构建的航班预订应用程序。"
     },
+    "quranKu": {
+      "Title": "QuranKu",
+      "Type": "个人项目",
+      "Desc": "一款使用 Next JS 和 Tailwind CSS 构建的在线古兰经阅读应用程序。"
+    },
     "Repository": "代码库",
     "LiveSite": "在线演示",
     "ProjectNotFound": "未找到项目",

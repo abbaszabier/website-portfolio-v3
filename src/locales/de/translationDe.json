@@ -111,6 +111,11 @@
       "Type": "Persönliches Projekt",
       "Desc": "Flugbuchungsanwendung, entwickelt mit Next JS, Prisma, Supabase und Tailwind CSS."
     },
+    "quranKu": {
+      "Title": "QuranKu",
+      "Type": "Persönliches Projekt",
+      "Desc": "Quran-App, entwickelt mit Next JS und Tailwind CSS."
+    },
     "Repository": "Repository",
     "LiveSite": "Demo",
     "ProjectNotFound": "Projekt nicht gefunden",

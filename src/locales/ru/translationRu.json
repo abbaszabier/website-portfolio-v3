@@ -111,6 +111,11 @@
       "Type": "Личный проект",
       "Desc": "Приложение для бронирования авиабилетов, созданное с использованием Next JS, Prisma, Supabase и Tailwind CSS."
     },
+    "quranKu": {
+      "Title": "QuranKu",
+      "Type": "Личный проект",
+      "Desc": "Приложение для чтения Корана, созданное с использованием Next JS и Tailwind CSS."
+    },
     "Repository": "Репозиторий",
     "LiveSite": "Демо",
     "ProjectNotFound": "Проект не найден",

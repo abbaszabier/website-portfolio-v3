@@ -3,6 +3,7 @@ import thumbnailDiyo from "../assets/thumbnailDiyo.webp";
 import thumbnailSKT from "../assets/thumbnailSKT.webp";
 import thumbnailChappy from "../assets/thumbnailChappy.webp";
 import thumbnailGoFlights from "../assets/thumbnailGoflights.webp";
+import thumbnailQuranKu from "../assets/thumbnailQuranKu.webp";
 import diyo1 from "../image/diyo/ssDiyo1.webp";
 import diyo2 from "../image/diyo/ssDiyo2.webp";
 import diyo3 from "../image/diyo/ssDiyo3.webp";
@@ -45,6 +46,10 @@ import goFlights9 from "../image/GoFlight/ssGoFlight9.webp";
 import goFlights10 from "../image/GoFlight/ssGoFlight10.webp";
 import goFlights11 from "../image/GoFlight/ssGoFlight11.webp";
 import goFlights12 from "../image/GoFlight/ssGoFlight12.webp";
+import quranKu1 from "../image/QuranKu/ssQuranKu1.webp";
+import quranKu2 from "../image/QuranKu/ssQuranKu2.webp";
+import quranKu3 from "../image/QuranKu/ssQuranKu3.webp";
+import quranKu4 from "../image/QuranKu/ssQuranKu4.webp";
 
 const useProjectData = () => {
   const { t } = useTranslation();
@@ -153,6 +158,19 @@ const useProjectData = () => {
         goFlights11,
         goFlights12,
       ],
+    },
+    {
+      id: 5,
+      title: t("portfolioPage.quranKu.Title"),
+      type: t("portfolioPage.quranKu.Type"),
+      isClient: null,
+      description: t("portfolioPage.quranKu.Desc"),
+      imageUrl: thumbnailQuranKu,
+      category: "next-js",
+      techStack: ["Typescript", "Next JS", "Tailwind CSS", "Zustand"],
+      linkRepo: "https://github.com/abbaszabier/next-myquran",
+      linkWeb: "https://next-myquran.vercel.app/",
+      screenshots: [quranKu1, quranKu2, quranKu3, quranKu4],
     },
   ];
 };

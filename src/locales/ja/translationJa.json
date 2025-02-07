@@ -111,6 +111,11 @@
       "Type": "個人プロジェクト",
       "Desc": "Next JS、Prisma、Supabase、Tailwind CSSを使用して構築された航空券予約アプリケーション。"
     },
+    "quranKu": {
+      "Title": "QuranKu",
+      "Type": "個人プロジェクト",
+      "Desc": "Next JSとTailwind CSSを使用して構築されたオンラインクルアンリーダーアプリケーション。"
+    },
     "Repository": "リポジトリ",
     "LiveSite": "デモ",
     "ProjectNotFound": "プロジェクトが見つかりません",

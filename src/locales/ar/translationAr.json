@@ -111,6 +111,11 @@
       "Type": "مشروع شخصي",
       "Desc": "تطبيق لحجز تذاكر الطيران تم إنشاؤه باستخدام Next JS و Prisma و Supabase و Tailwind CSS."
     },
+    "quranKu": {
+      "Title": "قرآن كو",
+      "Type": "مشروع شخصي",
+      "Desc": "تطبيق لقراءة القرآن تم إنشاؤه باستخدام Next JS و Tailwind CSS."
+    },
     "Repository": "المستودع",
     "LiveSite": "عرض تجريبي",
     "ProjectNotFound": "لم يتم العثور على المشروع",
