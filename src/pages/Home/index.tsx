@@ -50,8 +50,9 @@ function Home() {
           <motion.img
             src={Profile}
             alt="Avatar"
-            loading="eager"
+            loading="lazy"
             decoding="async"
+            fetchPriority="high"
             width="384"
             height="384"
             className="w-60 xs:w-48 md:w-72 lg:w-80 xl:w-96 2xl:w-auto"
